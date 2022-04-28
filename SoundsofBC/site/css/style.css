@@ -208,13 +208,60 @@ background-size:contain;
   
   
 }
+.fa-solid {
+	font-size:.89rem;
+	padding:1rem;
+	color:rgb(203, 201, 198);
+}
+.fa-brands{
+	font-size:1rem;
+	padding:1rem;
+	color:rgb(203, 201, 198);
+}
+
+.fa-solid:hover {
+	font-size:1.2rem;
+	padding:1rem;
+	color:rgb(180, 142, 3);
+}
+.fa-brands:hover{
+	font-size:1.2rem;
+	padding:1rem;
+	color:rgb(180, 142, 3);
+}
+.fa-solid:visited {
+	font-size:1.2rem;
+	padding:1rem;
+	color:#4a86a1;
+}
+.fa-brands:visited{
+	font-size:1.2rem;
+	padding:1rem;
+	color:#4a86a1;
+}
+.fa-solid:active {
+	font-size:1.2rem;
+	padding:1rem;
+	color:#59728a;
+}
+.fa-brands:active{
+	font-size:1.2rem;
+	padding:1rem;
+	color:#59728a;
+}
+
+.social{
+	font-family: 'Swanky and Moo Moo', cursive;
+	font-size:1.6rem;
+	color:rgb(199, 139, 34);
+}
 
 .my-pic4{
-	
 	width:70%;
-	
 	height: 150px; width: auto;
 }
+
+
 article {
   padding:10px;
   background:white;
@@ -257,7 +304,8 @@ a:link {
   }
 /* animation styling */
 .nostyle{
-	max-width:50%;
+	max-width:40%;
+	width:100%;
 	box-shadow:none;
 	position: relative;
 	top: 15px;
@@ -402,6 +450,8 @@ li a:visited{
 	transform: scale(2) ;
 
 }
+
+
 
 
 /* STYLING FOR LARGER SCREENS */
