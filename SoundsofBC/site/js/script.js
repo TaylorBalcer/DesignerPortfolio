@@ -7,9 +7,9 @@ let audioElement = document.querySelectorAll("audio")[3];
 
 //Array sotring the track titles
 let titles = [
-    "Walking Through the City",
-    "Taking the SkyTrain",
-    "Traveling on the Ferry"
+    "WALKING THROUGH THE CITY",
+    "TAKING THE SKYTRAIN",
+    "TRAVELING ON THE FERRY"
 
 ];
 
