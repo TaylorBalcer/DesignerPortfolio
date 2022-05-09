@@ -182,14 +182,14 @@ img {
 /* Top left text */
 .head {
     position: absolute;
-    top: 18%;
+    top: 17%;
     left: 10%;
     transform: translate(-50%, -50%);
 
 }
 
 h1 {
-    font-size: 2.2rem;
+    font-size: 2rem;
     color: rgb(241, 192, 15);
     text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.967);
     text-align: center;
