@@ -508,7 +508,7 @@ a:active {
     position: relative;
     top: 15px;
     left: -15px;
-	padding-right:15rem;
+
     animation: train-anim 10s ease-in-out 1s forwards;
     padding-bottom: 1rem;
 }

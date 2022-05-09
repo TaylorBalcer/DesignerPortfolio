@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Goldenne Fruit -- Extra</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@700&family=Comfortaa:wght@300&family=Montserrat:wght@100&family=Pathway+Gothic+One&family=Prata&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body>
+    <header class="masthead">
+        
+        <h1 class="masthead__logo"><img src="img/logo.png" alt="logo" id="logo"/></h1>
+        
+    </header>
+    <nav class="masthead__nav">
+    <ul class="masthead__nav-list">
+        <li class="masthead__nav-list-item"><a href="home.html"  class="masthead__nav-link">Home</a></li>
+        <li class="masthead__nav-list-item"><a href="flavor.html"  class="masthead__nav-link">Flavor</a></li>
+        <li class="masthead__nav-list-item"><a href="liquid.html"  class="masthead__nav-link">Liquid</a></li>
+
+        <li class="masthead__nav-list-item"><a href="extrafruit.html"  class="masthead__nav-link">Extra</a></li>
+        <li class="masthead__nav-list-item"><a href="powder.html"  class="masthead__nav-link">Powder</a></li>
+        <li class="masthead__nav-list-item"><a href="cart.html"  class="masthead__nav-link">Cart</a></li>
+    
+    </ul>
+</nav>
+    <h2>Customize Extra Fruit -- Goldenne Fruit </h2>
+    <div class="flex-container">
+<main>
+
+   
+    <div id="comp-frame">
+            <div id="comp-empty-layer"><img src="img/EmptyJar.png" alt="Empty Jar" id="EmptyJar" /></div>
+                <div id="comp-flavor-layer"></div>
+                <div id="comp-liquid-layer"></div>
+                <div id="comp-extra-layer"></div>
+                <div id="comp-powder-layer"></div>
+                <div id="cart-total">Total: $0</div>
+        </div>
+           
+        <section class="option_set">
+       
+                <p>Golden Berries</p>
+                <img src="img/goldenberries.png" alt="image" id="goldenberries"/>
+                
+                <p>Dragon Fruit</p>
+                <img src="img/dragonfruit.png" alt="image" id="dragonfruit"/>
+                
+                <p>Banana</p>
+                <img src="img/banana.png" alt="image" id="banana"/>
+        
+            </section>
+
+        
+        
+        </main> 
+       
+        <aside class="cart">
+            <section class="cart-box">
+            <h2 class= "flavor">Extra Chosen</h2>
+            <p id="cart-flavor-name">No flavor chosen yet</p>
+            <p id="cart-flavor-price">$</p>
+            <p id="cart-liquid-name">No Liquid chosen yet</p>
+            <p id="cart-liquid-price">$</p>
+            <p id="cart-extra-name">No extra fruit chosen yet</p>
+            <p id="cart-extra-price">$</p>
+            <p id="cart-powder-name">No powder chosen yet</p>
+            <p id="cart-powder-price">$</p>
+            </section>
+        </div>
+    
+        
+   
+        <!-- <div class="content">
+            <section class= Arrowleft>
+                
+              <a href="liquid.html"  class="masthead__nav-link2">
+                  <img src="img/Arrowleft.png" alt="Arrow Left" id="Arrowleft" /> 
+                  <h4>Liquid</h4>  
+                </a>
+                </section>
+                
+                <section class= Arrowright>
+                    
+                  <a href="powder.html"  class="masthead__nav-link2">
+                  <img src="img/Arrowright.png" alt="Arrow Right" id="Arrowright" /> 
+                  <h4>Powder</h4> 
+                </a>
+                </section>
+            </div> -->
+
+    
+    
+</section>
+
+</aside>
+</div>
+
+
+
+<footer>&copy; Taylor Balcer</footer>
+
+
+<script src="js/script.js"></script>
+
+        <script>
+            //js code specfic to this page
+            updateCart();//populate the cart right away
+            //event listeners
+            //when berry selection is clicked, execute funtion
+            document.querySelector("#goldenberries").addEventListener("click" , choseGolden);
+            
+            //when super green selection is clicked, execute funtion
+            document.querySelector("#dragonfruit").addEventListener("click" , choseDragon);
+            //when tropical selection is clicked, execute funtion
+            document.querySelector("#banana").addEventListener("click" , choseBanana);
+
+
+           
+        </script>
+    </body>
+</html>
