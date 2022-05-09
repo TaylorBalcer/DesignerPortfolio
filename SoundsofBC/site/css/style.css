@@ -145,7 +145,7 @@ body {
     grid-template-areas:
         "hdr"
         "mn"
-        "as1"
+        /* "as1" */
         "ftr";
 }
 
@@ -161,8 +161,18 @@ main {
     grid-area: mn;
 }
 
-.aside-1 {
-    grid-area: as1;
+iframe{
+	
+	background-color:black;
+	width:80%
+}
+img {
+	padding:1rem;
+	border-radius: 10px;
+	max-width: 80%;
+	height: auto;
+	transition: transform 1s ease .1s;
+
 }
 
 /* Type styling */
@@ -172,14 +182,14 @@ main {
 /* Top left text */
 .head {
     position: absolute;
-    top: 20%;
-    left: 10%;
+    top: 15%;
+    left: 8%;
     transform: translate(-50%, -50%);
 
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     color: rgb(241, 192, 15);
     text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.967);
     text-align: center;
@@ -193,6 +203,7 @@ h2 {
     font-family: 'Comfortaa', cursive;
     font-size: 1.7rem;
     color: #652e1a;
+	padding:1rem;
 }
 
 h3 {
@@ -206,7 +217,7 @@ h3 {
 img {
     border-radius: 10px;
     padding: 1rem 1rem .5rem 0rem;
-    width: 60%;
+    width: 40%;
     float: left;
     height: auto;
     transition: transform 1s ease .1s;
@@ -215,12 +226,22 @@ img {
 
 .skytrain {
     border-radius: 10px;
-    padding: 1rem 0rem .5rem 1rem;
-    width: 60%;
+    padding: 1rem;
+    width: 50%;
     float: right;
     height: auto;
     transition: transform 1s ease .1s;
 
+}
+
+.none{
+	font-family: 'Comfortaa', cursive;
+    font-size: 1.7rem;
+    color: #652e1a;
+	padding-left:1rem;
+	padding-bottom:2rem;
+	padding-top:2rem;
+	margin-top:2rem;
 }
 
 .hero {
@@ -244,7 +265,8 @@ h4 {
     font-size: 1.3rem;
     padding-bottom: .2rem;
     padding-top: .2rem;
-    color: rgb(219, 211, 143);
+	padding-left:1rem;
+    color: rgb(99, 91, 20);
 
 }
 
@@ -269,7 +291,7 @@ h5 {
     font-family: 'Bebas Neue', cursive;
     font-size: 1.6rem;
     color: rgb(199, 139, 34);
-	
+	padding:1rem;
 
 }
 
@@ -277,6 +299,14 @@ p {
     font-size: .9em;
     margin-bottom: .5rem;
     font-family: 'Jura', sans-serif;
+	padding:1rem;
+}
+.normal{
+	font-size: 1em;
+    margin-bottom: .5rem;
+    font-family: 'Jura', sans-serif;
+	padding:1rem;
+	padding-left:0;
 }
 
 html {
@@ -323,7 +353,7 @@ body {
 	border-top-left-radius:100px 90px; */
 header {
     background-image: url(../img/TantalusHut.gif);
-    padding-bottom: 15rem;
+    padding-bottom: 6rem;
     background-size: cover;
 }
 
@@ -357,12 +387,14 @@ main {
 }
 
 .fa-solid {
+	
     font-size: 1.89rem;
     padding: 1rem;
     color: rgb(203, 201, 198);
 }
 
 .fa-brands {
+	
     font-size: 2rem;
     padding: 1rem;
 	padding-left:1.30rem;
@@ -370,37 +402,37 @@ main {
 }
 
 .fa-solid:hover {
-    font-size: 1.2rem;
+    
     padding: 1rem;
     color: rgb(180, 142, 3);
 }
 
 .fa-brands:hover {
-    font-size: 1.2rem;
+   
     padding: 1rem;
     color: rgb(180, 142, 3);
 }
 
 .fa-solid:visited {
-    font-size: 1.2rem;
+   
     padding: 1rem;
     color: #4a86a1;
 }
 
 .fa-brands:visited {
-    font-size: 1.2rem;
+    
     padding: 1rem;
     color: #4a86a1;
 }
 
 .fa-solid:active {
-    font-size: 1.2rem;
+   
     padding: 1rem;
     color: #59728a;
 }
 
 .fa-brands:active {
-    font-size: 1.2rem;
+    
     padding: 1rem;
     color: #59728a;
 }
@@ -432,7 +464,7 @@ article {
 .player-panel {
     padding-left: 1rem;
     align-content: center;
-
+	
 
 }
 
@@ -441,9 +473,11 @@ article {
 }
 
 a {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 1.2rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.1rem;
     color: white;
+	padding:1rem;
+	text-align:center;
 
 }
 
@@ -453,7 +487,7 @@ a:link {
 
 /* visited link */
 a:visited {
-    color: #704abc
+    color: #125026
 }
 
 /* mouse over link */
@@ -474,27 +508,39 @@ a:active {
     position: relative;
     top: 15px;
     left: -15px;
-    animation: train-anim 7s ease-in-out 1s forwards;
+	padding-right:15rem;
+    animation: train-anim 10s ease-in-out 1s forwards;
     padding-bottom: 1rem;
 }
 .small{
 	float:right;
 	width:10%;
 	margin-top:20px;
-	margin-right:20px;
+	margin-right:60px;
+}
+.big{
+	width:60%;
+	padding:1rem;
 }
 .left{
 	float:left;
 	width:30%;
+	padding:1rem;
+}
+.left2{
+	float:left;
+	width:50%;
+	padding:1rem;
 }
 .right{
-	float:right;
-	width:30%;
+	float:left;
+	width:51.5%;
+	padding:1rem;
 }
 .right2{
 	float:right;
 	width:50%;
-	padding-left:10px;
+	padding:1rem;
 }
 *,
 *:before,
@@ -507,8 +553,8 @@ label .menu {
     right: -9px;
     top: -100px;
     z-index: 100;
-    width: 200px;
-    height: 200px;
+    width: 160px;
+    height: 160px;
     background: black;
     border-radius: 50% 50% 50% 50%;
     -webkit-transition: .5s ease-in-out;
@@ -520,8 +566,8 @@ label .menu {
 
 label .hamburger {
     position: absolute;
-    top: 135px;
-    left: 50px;
+    top: 125px;
+    left: 60px;
     width: 30px;
     height: 2px;
     background: #2a4a2f;
@@ -618,6 +664,7 @@ h1 {
 
 
 
+
 .dropcap {
     float: left;
     font-size: 400%;
@@ -665,7 +712,28 @@ h1 {
 
 
 }
+.column {
+	float: left;
+	width: 50%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
 
+  .column {
+	float: left;
+  }
+  
+
+  @media screen and (max-width: 600px) {
+	.column {
+	  width: 100%;
+	}
+  }
 .marquee__gallery {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(195px, 1fr));
@@ -808,7 +876,7 @@ button:hover {
 		"ftr ftr ftr ftr";
 		The above grid can be done entirely with ONE property*/
         grid-template:
-            "hdr hdr hdr hdr" auto "mn mn as1 as1" auto "ftr ftr ftr ftr" auto / 1fr 1fr .2fr 1fr;
+            "hdr hdr hdr hdr" auto "mn mn mn mn" auto "ftr ftr ftr ftr" auto / 1fr 1fr .2fr 1fr;
     }
 
     main {
@@ -820,9 +888,9 @@ button:hover {
     }
 
     img {
-
+		padding:1rem;
         border-radius: 10px;
-        max-width: 100%;
+        max-width: 80%;
         height: auto;
         transition: transform 1s ease .1s;
 
@@ -840,7 +908,7 @@ button:hover {
 audio {
 
     width: 75%;
-    min-width: 200px;
+    min-width: 90px;
 
 }
 
@@ -867,12 +935,12 @@ audio {
 
 button img {
 
-    width: 100%;
+    width: 70%;
 }
 
 #play_btn {
     flex: 1;
-    min-width: 50px;
+    min-width: 20px;
     border: none;
 
     cursor: pointer;
@@ -901,7 +969,7 @@ button:hover {
 
 #pause_btn {
     flex: 1;
-    min-width: 50px;
+    min-width: 20px;
     border: none;
 
     cursor: pointer;
@@ -920,12 +988,12 @@ button:hover {
 } */
 #title_text {
     flex: 1 0 100px;
-    font-size: 2rem;
+    font-size: 1rem;
     font-family: 'Orbitron', sans-serif;
     text-align: center;
-
-    padding: 1rem;
-    letter-spacing: 2px;
+	font-weight:bold;
+    padding: 2rem;
+    letter-spacing: 3px;
     background-image: url(../img/metal.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -935,7 +1003,7 @@ button:hover {
 
 
 #next_btn {
-    flex: 1 0 50px;
+    flex: 1 0 20px;
 
     font-size: 1.9rem;
 
