@@ -899,7 +899,13 @@ button:hover {
 h1{
 	font-size:1.8
 }
+.head {
+    position: absolute;
+    top: 16%;
+    left: 10%;
+    transform: translate(-50%, -50%);
 
+}
 
 }
 
