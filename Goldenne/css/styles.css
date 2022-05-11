@@ -170,13 +170,13 @@ i, em {
 	}
 
 	.flavor{
-		font-size: 1.2rem;
+		font-size: 2rem;
 		font-family: 'Comfortaa', cursive;
-		background-color: #f9ab00;
-		color: #3a530f;
-		padding-left:.1rem;
+		background-color: #e2673d;
+		color: #893d24;
+		padding-left:1rem;
 		font-weight: bold;
-		border: #fade7d 2px solid;
+	
 	}
 
 	.masthead {
@@ -190,6 +190,9 @@ i, em {
 		font-weight: bold;
 		color: #fff;
 		margin: .5rem;
+	}
+	.cart p{
+		padding-left:1rem;
 	}
 
 	.cart h3 {
@@ -224,6 +227,22 @@ i, em {
 	
 
 	#comp-frame img{
+		padding-top:1rem;
+		width:100%;
+		max-height:100vh;
+		max-width:100vh;
+	}
+
+	#comp-frame2 {
+		width:60%;
+		height:42vh;
+		position:relative;
+		background-color:#fade7d;
+	}
+
+	
+
+	#comp-frame2 img{
 		padding-top:1rem;
 		width:100%;
 		max-height:100vh;
@@ -286,133 +305,169 @@ i, em {
 	.cartinfo{
 		font-size:70%;
 	}
+	.main-menu{
+	
+		list-style: none;
+		display: grid;
+		grid-template-areas: 
+		"navl navl navl navl navl navl";
+		grid-template-rows: auto;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+		background-color:#3a530f;
+		
+	} 
+	.nav-button{
+		grid-area: navl;
+			margin: 1rem 1rem 1rem 0rem;
+			display: block;  
+			text-align: center;
+			text-decoration: none;
+			border: 1px #669219 solid;
+			font-family: 'Syncopate', sans-serif;
+			color:#fdf4d5;
+			font-size: 1rem;
+	}
+	.nav-button:hover{
+	background-color:#669219;
+	
+	}
 
 /* Styling for MOBILE LANDSCAPE ONLY */
 
-@media screen and (orientation: landscape){
-	
-	main{
-		max-height:200px;
-		padding:0%;
-		/* display: flex; /* flex container around the list items 
-		flex-flow: row nowrap; */
-		flex:2;
-	}
-	
-	aside{
-	/* display: flex;
-		flex-flow: row nowrap; */
-		flex:1;
-		font-size:135%;
-	}
 
-	
 
-	.cartinfo{
-		font-size:79%;
-		
-	}	
+ /* end styling for landscape */
 
-	 .header-and-content-container{
-		display: flex;
-		flex-flow: row nowrap;
-	}
-	.row-container {
-		flex:1;
-		height: calc(100vh - 40px); /*whole screen height is 100vh, and we subtract height of footer*/
-	}
-	.masthead{
-		flex: 0 0 5rem; /*always have a fixed width of 5 rem */
-		height: auto;
-		flex-flow: row nowrap; /* stack the items within*/
-		justify-content: flex-start; /*position everything at the top*/
-		font-size:90%;
-	}
+ 
 
-	.masthead__nav-list { /* ol */
-		list-style: none;
-		margin: .25rem;
-		display: flex; /* flex container around the list items */
-		flex-flow: row nowrap;
-	}
+ @media screen and (min-width: 780px){
 
-	.masthead h1{
-		margin: 0 .5rem; 
-	}
-
-	.masthead__nav-link {
-		font-size: 1rem;
-		padding:1.5rem;
-	}
-
-	 h2{
-		flex: 0 0 5rem; /*always have a fixed width of 5 rem */
-		font-size: 20px;
-	 }
-
-	.empty-jar{
-		max-width: 250px; /*control height of content images */
-	}
-
-	.cart3{
-		padding:0;
-		margin: 0 0 0 0;
-		flex:2;
-		width:35%; 
-		height:31vh;
-	}
-
-	.cart3 p{
-		
-		font-size:60%;
-	}
-	
 	#comp-frame {
-		flex:1;
-		height:31.2vh;
+		width:45%;
+		height:70vh;
+		position:relative;
+		background-color:#fade7d;
 	}
 
+	#comp-frame2 {
+	width:50%;
+	height:70vh;
+	position:relative;
+	background-color:#fade7d;
+	}
+	#comp-frame2 img{
+		padding-left:6rem;
+		width:80%;
+		
+	
+	}
 	#comp-frame img{
-		max-height:38%;
-		max-width:38%;
+		padding-top:4rem;
+		width:100%;
 		padding-left:2rem;
+	
+	
 	}
-
-	.content2{
-		max-height:10%;
-		max-width:10%;
+	.empty-jar{
+		max-width: 100%; /*control height of content images */
 	}
 	
 	.option_set{
 		flex:1;
+		padding-left:5rem;
+		padding-right:5rem;
+		padding-top:4rem;
 	}
-		
-	.option_set img{
-		flex:1; 
-		max-height:38%;
-		max-width:38%;
-		
-	}
-			
-	.option_set p{
-		padding-top:.23rem;
-		color:#491a0a;
-		font-weight:bold;			
-	}
-
-	
 	.flex-container{
 		display:flex;
 	}
 
-	.flex-container section{
-		flex:1;
+		
+	.option_set img{
+		flex:1; 
+		max-height:48%;
+		max-width:100%;
+		padding-bottom:1rem;
+		
 	}
 	
-	.flex-container p{
-		font-size:.7rem;
-		font-size:63%;
-	}
+.cart{
+	width:35%;
+	height:70vh;
+	position:relative
+}
+.cart-box{
+	width:100%;
 }
 
- /* end styling for landscape */
+.cart-box p{
+	padding:1rem;
+	line-height:1rem;
+	font-size:1.4rem;
+}
+.main-menu{
+	
+	list-style: none;
+	display: grid;
+	grid-template-areas: 
+	"navl navl navl navl navl navl";
+	grid-template-rows: auto;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	background-color:#3a530f;
+	
+} 
+.nav-button{
+	grid-area: navl;
+	padding:.5rem;
+		margin: 1rem 1rem 1rem 0rem;
+		display: block;  
+		text-align: center;
+		text-decoration: none;
+		border: 1px #669219 solid;
+		font-family: 'Syncopate', sans-serif;
+		color:#fdf4d5;
+		font-size: 1rem;
+}
+.nav-button:hover{
+background-color:#669219;
+
+}
+
+h2 {
+	font-size: 1.5rem;
+	font-family: 'Prata', serif;
+	background-color: #f9ab00;
+	color: #3a530f;
+	padding: 1rem;
+	font-weight: bold;
+	border: #e2673d 2px solid;
+}
+.cartinfo {
+	width:100%;
+	padding:1rem;
+}
+.cartinfo p{
+	padding: 0 1rem 1rem 0; 
+}
+a{
+	font-size:2rem;
+	padding: 0 1rem 1rem 0; 
+}
+
+footer{
+	height:1rem;
+	
+}
+
+.cart3{
+	width:60%; 
+}
+#cart-total{
+	padding:1rem;
+}
+
+#logo{
+	padding-left:.5rem;
+}
+
+ }
