@@ -80,9 +80,6 @@ i, em {
 /* CUSTOM STYLES */
 /* CSS for MOBILE FIRST: */
 /* HTML construct tags */
-
-
-
 	
 	html {
 		font-size: 100%;
@@ -284,11 +281,21 @@ i, em {
 		flex:1;
 		max-width:100%;
 		background-color:#fdf4d5;
-		background-image: url(../img/two.png)
+		background-image: url(../img/two.png);
+		
+	}
+	#cart-total{
+		padding:1rem;
+	}
+	
+	#logo{
+		padding-left:.5rem;
+		width:100%;
 	}
 
 	.option_set p{
 		margin-left:.5rem; 
+		font-size:1.3rem;
 	}
 			
 	.cart-box3{
@@ -322,7 +329,7 @@ i, em {
 			display: block;  
 			text-align: center;
 			text-decoration: none;
-			border: 1px #669219 solid;
+			
 			font-family: 'Syncopate', sans-serif;
 			color:#fdf4d5;
 			font-size: 1rem;
@@ -331,6 +338,18 @@ i, em {
 	background-color:#669219;
 	
 	}
+	#comp-frame2 {
+		width:50%;
+		height:70vh;
+		position:relative;
+		background-color:#fade7d;
+		}
+		#comp-frame2 img{
+			padding-left:6rem;
+			width:80%;
+			
+		
+		}
 
 /* Styling for MOBILE LANDSCAPE ONLY */
 
@@ -347,6 +366,7 @@ i, em {
 		height:70vh;
 		position:relative;
 		background-color:#fade7d;
+		
 	}
 
 	#comp-frame2 {
@@ -368,6 +388,8 @@ i, em {
 	
 	
 	}
+
+	
 	.empty-jar{
 		max-width: 100%; /*control height of content images */
 	}
@@ -392,8 +414,9 @@ i, em {
 	}
 	
 .cart{
-	width:35%;
-	height:70vh;
+	/* width:35%;
+	height:70vh; */
+	flex:1;
 	position:relative
 }
 .cart-box{
@@ -404,6 +427,9 @@ i, em {
 	padding:1rem;
 	line-height:1rem;
 	font-size:1.4rem;
+}
+main{
+	flex:2;
 }
 .main-menu{
 	
@@ -423,7 +449,7 @@ i, em {
 		display: block;  
 		text-align: center;
 		text-decoration: none;
-		border: 1px #669219 solid;
+		
 		font-family: 'Syncopate', sans-serif;
 		color:#fdf4d5;
 		font-size: 1rem;
@@ -456,6 +482,7 @@ a{
 
 footer{
 	height:1rem;
+	padding:1rem;
 	
 }
 
@@ -468,6 +495,7 @@ footer{
 
 #logo{
 	padding-left:.5rem;
+	width:100%;
 }
 
  }

@@ -109,6 +109,7 @@ section {
 
 body {
     line-height: 1;
+    
 }
 
 ol,
@@ -145,7 +146,7 @@ body {
     grid-template-areas:
         "hdr"
         "mn"
-        /* "as1" */
+        "as1"
         "ftr";
 }
 
@@ -160,6 +161,7 @@ footer {
 main {
     grid-area: mn;
 }
+
 
 iframe{
 	
@@ -330,6 +332,7 @@ html {
 }
 
 body {
+    
     font: 100%/1.4 Arial, Helvetica, sans, sans-serif;
     background-color: rgba(0, 0, 0, .7);
 
@@ -876,14 +879,16 @@ button:hover {
 		"ftr ftr ftr ftr";
 		The above grid can be done entirely with ONE property*/
         grid-template:
-            "hdr hdr hdr hdr" auto "mn mn mn mn" auto "ftr ftr ftr ftr" auto / 1fr 1fr .2fr 1fr;
+            "hdr hdr hdr hdr" auto "mn mn as1 as1" auto "ftr ftr ftr ftr" auto / 1fr 1fr .2fr 1fr;
     }
 
     main {
+        
         margin-left: .5rem;
     }
 
     aside {
+        grid-area:as1;
         margin-right: .5rem;
     }
 

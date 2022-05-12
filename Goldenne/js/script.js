@@ -45,7 +45,7 @@ if(!sessionStorage.powderName){
  * This method adds Super Greens Blend info to cart
  */const choseSuperGreens = () => {
      //store user's choices in Web storage
-     sessionStorage.flavorName = "Super Greens Blend";
+     sessionStorage.flavorName = "Super Greens Blend ";
     //  sessionStorage.flavorImage = "img/SuperGreensJar.png"
      sessionStorage.flavorPrice= 3.99;
      sessionStorage.flavorCompImage= '<img src="img/composite/SuperGreensJar.png" />';
@@ -194,6 +194,7 @@ if(!sessionStorage.powderName){
      return totalPrice.toFixed(2)
  }
  
+ 
 
  const updateCart=() => {
      //put proper text from var's into flavor area of cart
@@ -222,3 +223,24 @@ if(!sessionStorage.powderName){
  }//end function updateCart
 
  
+//This section adds star images to other stars when pressing the arrow key up and arrow key down removes them
+/**
+ * 
+ * @param  evt //adds a star image and removes as stated before^
+ */
+ let starArray = [];
+ starArray[0] = {image:"star.png"};
+ const arrowPress = (evt) => {
+     switch(evt.key){
+       case "ArrowUp":
+         document.querySelector("#star-container").innerHTML += "<img src=\"img/" + starArray[0].image + "\">" + " ";
+       break;
+       case "ArrowDown":
+         document.querySelectorAll("img")[4].remove("src");
+       break;
+       
+     }
+   }
+ document.addEventListener("keydown", (evt) => {
+     arrowPress(evt);
+     });

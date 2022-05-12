@@ -14,7 +14,7 @@
     
     <header class="masthead">
         
-        <h1 class="masthead__logo"><img src="img/logo.png" alt="logo" id="logo"/></h1>
+        <h1 class="masthead__logo"><img src="img/goldenne_logo.png" alt="logo" id="logo"/></h1>
         
     </header>
     <nav id="main-navigation">
@@ -55,14 +55,17 @@
     
         </aside>
         <div id="comp-frame2">
-    
+            <div id="comp-empty-layer">
+            <!-- <img class="small" src="img/smoothie.png"></div> -->
             <div id="comp-empty-layer"><img src="img/EmptyJar.png" alt="Empty Jar" id="EmptyJar" /></div>
             <div id="comp-flavor-layer"></div>
                 <div id="comp-liquid-layer"></div>
                 <div id="comp-extra-layer"></div>
                 <div id="comp-powder-layer"></div>
                 <div id="cart-total">Total: $0</div>
+            </div>
         </section>
+        
            
     </main>
     
@@ -70,7 +73,9 @@
       
             </div>
     
-       
+            
+               
+            
        
             <script src="js/script.js"></script>
 
@@ -84,6 +89,26 @@
 
 <footer>&copy; Taylor Balcer</footer>
 
+<script src="js/script.js"></script>
 
+        <script>
+            //js code specfic to this page
+            updateCart();//populate the cart right away
+            //event listeners
+            //when water selection is clicked, execute funtion
+            document.querySelector("#springwater").addEventListener("click" , choseWater);
+            
+            //when pom juice selection is clicked, execute funtion
+            document.querySelector("#pomjuice").addEventListener("click" , chosePom);
+            //when orange juice selection is clicked, execute funtion
+            document.querySelector("#orangejuice").addEventListener("click" , choseOrange);
+
+           
+ 
+       
+ 
+
+document.querySelectorAll("input")[1].addEventListener("click", eMail);
+        </script>
 </body>
 </html>
