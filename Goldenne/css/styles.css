@@ -534,7 +534,7 @@ span {
 @media screen and (orientation: landscape){
     #comp-frame {
         width: 45%;
-        height: 70vh;
+        height: 100%;
         position: relative;
         background-color: #fade7d;
 
@@ -542,7 +542,7 @@ span {
 
     #comp-frame2 {
         width: 50%;
-        height: 70vh;
+        height: 100%;
         position: relative;
         background-color: #fade7d;
     }
@@ -557,7 +557,7 @@ span {
     #comp-frame img {
         padding-top: 4rem;
         width: 100%;
-        padding-left: 2rem;
+        padding-left: 1rem;
 
 
     }
@@ -572,7 +572,7 @@ span {
         flex: 1;
         padding-left: 1rem;
         padding-right: 1rem;
-        padding-top: 2rem;
+        padding-top: 1rem;
     }
 
     .flex-container {
@@ -601,8 +601,8 @@ span {
 
     .cart-box p {
         padding: 1rem;
-        line-height: 1rem;
-        font-size: 1.4rem;
+        line-height: .2rem;
+        font-size: 1rem;
     }
 
 
