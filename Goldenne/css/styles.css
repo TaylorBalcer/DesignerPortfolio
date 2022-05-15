@@ -527,6 +527,9 @@ span {
 	box-shadow: 0 5px 15px rgba(248, 244, 10, 0.4);
 }
 
+
+
+
 /* Styling for MOBILE LANDSCAPE ONLY */
 
 
@@ -730,9 +733,7 @@ span {
         margin-left: 1rem;
     }
 
-.gif{
-    animation-direction: alternate;
-}
+
 
 
 
