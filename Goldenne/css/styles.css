@@ -396,7 +396,7 @@ h2 {
     flex: 1;
     max-width: 100%;
     background-color: #fdf4d5;
-    background-image: url(../img/two.png);
+   
 
 }
 
@@ -531,7 +531,210 @@ span {
 
 
 /* Styling for MOBILE LANDSCAPE ONLY */
+@media screen and (orientation: landscape){
+    #comp-frame {
+        width: 45%;
+        height: 70vh;
+        position: relative;
+        background-color: #fade7d;
 
+    }
+
+    #comp-frame2 {
+        width: 50%;
+        height: 70vh;
+        position: relative;
+        background-color: #fade7d;
+    }
+
+    #comp-frame2 img {
+        padding-left: 6rem;
+        width: 80%;
+
+
+    }
+
+    #comp-frame img {
+        padding-top: 4rem;
+        width: 100%;
+        padding-left: 2rem;
+
+
+    }
+
+
+    .empty-jar {
+        max-width: 100%;
+        /*control height of content images */
+    }
+
+    .option_set {
+        flex: 1;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 2rem;
+    }
+
+    .flex-container {
+        display: flex;
+    }
+
+
+    .option_set img {
+        flex: 1;
+        max-height: 48%;
+        max-width: 100%;
+        padding-bottom: 1rem;
+
+    }
+
+    .cart {
+        /* width:35%;
+	height:70vh; */
+        flex: 1;
+        position: relative
+    }
+
+    .cart-box {
+        width: 100%;
+    }
+
+    .cart-box p {
+        padding: 1rem;
+        line-height: 1rem;
+        font-size: 1.4rem;
+    }
+
+
+    main {
+        flex: 2;
+    }
+
+    .main-menu {
+
+        list-style: none;
+        display: grid;
+        grid-template-areas:
+            "navl navl navl navl navl navl";
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        background-color: #3a530f;
+
+    }
+
+    .nav-button {
+        grid-area: navl;
+        padding: .5rem;
+        margin: 1rem 1rem 1rem 0rem;
+        display: block;
+        text-align: center;
+        text-decoration: none;
+
+        font-family: 'Syncopate', sans-serif;
+        color: #fdf4d5;
+        font-size: .9rem;
+    }
+
+    .nav-button:hover {
+        background-color: #669219;
+
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        font-family: 'Prata', serif;
+        background-color: #f9ab00;
+        color: #3a530f;
+        padding: 1rem;
+        font-weight: bold;
+        border-bottom: #e2673d 2px solid;
+        border-top: #e2673d 2px solid;
+    }
+
+    .cartinfo {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .cartinfo p {
+        padding: 0 1rem 1rem 0;
+    }
+
+    a {
+        font-size: 2rem;
+        padding: 0 1rem 1rem 0;
+    }
+
+    footer {
+        height: 1rem;
+        padding: 1rem;
+
+    }
+
+    .cart3 {
+        width: 60%;
+    }
+
+    #cart-total {
+        padding: 1.5rem;
+    }
+
+    #logo {
+        padding-left: .5rem;
+        width: 100%;
+        max-width: 250px;
+        grid-area: logo;
+    }
+
+  
+
+    .order_button {
+        font-size: 1.5rem;
+        text-decoration: none;
+        color: #fade7d;
+        background: #669219;
+        padding: 15px 40px;
+        border-radius: 4px;
+        font-weight: normal;
+        text-transform: uppercase;
+        transition: all 0.2s ease-in-out;
+        float: right;
+        align-content: center;
+        /* top: 50%;
+        left: 92%;
+        transform: translate(-2%, -230%);
+        -ms-transform: translate(-20%, -90%);
+        cursor: pointer; */
+    }
+
+    .order_button a:visited {
+        color: white;
+    }
+
+    .glow-button:hover {
+		color: #f9ab00;
+		box-shadow: 0 5px 15px rgba(248, 244, 10, 0.4);
+    }
+
+    .cart-box p {
+
+        margin-left: 1rem;
+    }
+    .option_set {
+        /* max-width: 100px; control height of content images */
+        flex: 1;
+        max-width: 100%;
+        background-color: #fdf4d5;
+       
+    
+    }
+    
+    .option_set img {
+        padding-top: .5rem;
+        width: 100%;
+        height: 65px;
+    } 
+}
 
 
 /* end styling for landscape */
