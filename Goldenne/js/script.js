@@ -35,7 +35,7 @@ if(!sessionStorage.powderName){
      sessionStorage.flavorName = "Berry Blend";
     //  sessionStorage.flavorImage = "img/Berryjar.png"
      sessionStorage.flavorPrice= 2.99;
-     sessionStorage.flavorCompImage= '<img src="img/composite/Berryjar.png" />';
+     sessionStorage.flavorCompImage= '<img src="img/composite/Berry-jar.png" />';
      updateCart(); //call that function right away
      
      
@@ -48,7 +48,7 @@ if(!sessionStorage.powderName){
      sessionStorage.flavorName = "Super Greens Blend ";
     //  sessionStorage.flavorImage = "img/SuperGreensJar.png"
      sessionStorage.flavorPrice= 3.99;
-     sessionStorage.flavorCompImage= '<img src="img/composite/SuperGreensJar.png" />';
+     sessionStorage.flavorCompImage= '<img src="img/composite/Super-Greens-Jar.png" />';
      updateCart(); //call that function right away
      
      
@@ -61,7 +61,7 @@ if(!sessionStorage.powderName){
      sessionStorage.flavorName = "Tropical Blend";
     //  sessionStorage.flavorImage = "img/TropicalJar.png"
      sessionStorage.flavorPrice= 2.99;
-     sessionStorage.flavorCompImage= '<img src="img/composite/TropicalJar.png" />';
+     sessionStorage.flavorCompImage= '<img src="img/composite/Tropical-Jar.png" />';
      updateCart(); //call that function right away
      
      
@@ -74,7 +74,7 @@ if(!sessionStorage.powderName){
      //store user's choices in Web storage
      sessionStorage.liquidName = "Spring Water";
      sessionStorage.liquidPrice= 1.00;
-     sessionStorage.liquidCompImage= '<img src="img/composite/Waterjar.png" />'
+     sessionStorage.liquidCompImage= '<img src="img/composite/Water-jar.png" />'
      updateCart(); //call that function right away
      
      
@@ -85,7 +85,7 @@ if(!sessionStorage.powderName){
      //store user's choices in Web storage
      sessionStorage.liquidName = "Pomegranate Juice";
      sessionStorage.liquidPrice= 1.99;
-     sessionStorage.liquidCompImage= '<img src="img/composite/Pomjar.png" />';
+     sessionStorage.liquidCompImage= '<img src="img/composite/Pom-jar.png" />';
      updateCart(); //call that function right away
      
      
@@ -98,7 +98,7 @@ if(!sessionStorage.powderName){
      sessionStorage.liquidName = "Orange Juice";
     
      sessionStorage.liquidPrice= 1.35;
-     sessionStorage.liquidCompImage= '<img src="img/composite/Orangejar.png" />'
+     sessionStorage.liquidCompImage= '<img src="img/composite/Orange-jar.png" />'
      updateCart(); //call that function right away
      
      
@@ -110,7 +110,7 @@ if(!sessionStorage.powderName){
      //store user's choices in Web storage
      sessionStorage.extraName = "Golden Berries";
      sessionStorage.extraPrice= 1.99;
-     sessionStorage.extraCompImage= '<img src="img/composite/Goldenjar.png" />'
+     sessionStorage.extraCompImage= '<img src="img/composite/Golden-jar.png" />'
      updateCart(); //call that function right away
      
      
@@ -121,7 +121,7 @@ if(!sessionStorage.powderName){
      //store user's choices in Web storage
      sessionStorage.extraName = "Dragon Fruit";
      sessionStorage.extraPrice= 1.99;
-     sessionStorage.extraCompImage= '<img src="img/composite/Dragonjar.png" />';
+     sessionStorage.extraCompImage= '<img src="img/composite/Dragon-jar.png" />';
      updateCart(); //call that function right away
      
      
@@ -134,7 +134,7 @@ if(!sessionStorage.powderName){
      sessionStorage.extraName = "Banana";
     
      sessionStorage.extraPrice= 1.00;
-     sessionStorage.extraCompImage= '<img src="img/composite/Bananajar.png" />'
+     sessionStorage.extraCompImage= '<img src="img/composite/Banana-jar.png" />'
      updateCart(); //call that function right away
      
      
@@ -145,7 +145,7 @@ if(!sessionStorage.powderName){
      //store user's choices in Web storage
      sessionStorage.powderName = "Turmeric Powder";
      sessionStorage.powderPrice= .50;
-     sessionStorage.powderCompImage= '<img src="img/composite/Turmericjar.png" />'
+     sessionStorage.powderCompImage= '<img src="img/composite/Turmeric-jar.png" />'
      updateCart(); //call that function right away
      
      
@@ -156,7 +156,7 @@ if(!sessionStorage.powderName){
      //store user's choices in Web storage
      sessionStorage.powderName = "Ginger Powder";
      sessionStorage.powderPrice= .50;
-     sessionStorage.powderCompImage= '<img src="img/composite/Gingerjar.png" />';
+     sessionStorage.powderCompImage= '<img src="img/composite/Ginger-jar.png" />';
      updateCart(); //call that function right away
      
      
@@ -169,7 +169,7 @@ if(!sessionStorage.powderName){
      sessionStorage.powderName = "Blue Spirulina";
     
      sessionStorage.powderPrice= .50;
-     sessionStorage.powderCompImage= '<img src="img/composite/Spirulinajar.png" />'
+     sessionStorage.powderCompImage= '<img src="img/composite/Spirulina-jar.png" />'
      updateCart(); //call that function right away
      
      
@@ -223,24 +223,3 @@ if(!sessionStorage.powderName){
  }//end function updateCart
 
  
-//This section adds star images to other stars when pressing the arrow key up and arrow key down removes them
-/**
- * 
- * @param  evt //adds a star image and removes as stated before^
- */
- let starArray = [];
- starArray[0] = {image:"star.png"};
- const arrowPress = (evt) => {
-     switch(evt.key){
-       case "ArrowUp":
-         document.querySelector("#star-container").innerHTML += "<img src=\"img/" + starArray[0].image + "\">" + " ";
-       break;
-       case "ArrowDown":
-         document.querySelectorAll("img")[4].remove("src");
-       break;
-       
-     }
-   }
- document.addEventListener("keydown", (evt) => {
-     arrowPress(evt);
-     });
