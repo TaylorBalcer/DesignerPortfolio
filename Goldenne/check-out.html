@@ -30,72 +30,63 @@
         </ul>
       </nav>
     
-    <h2>Cart -- Goldenne Fruit </h2>
-    <main>
-
-        <aside class="cart3">
-            <div class="content">
-                  
-            <section class="cart-box">
-                <h2 class="flavor">Chosen Items</h2>
-            
-                <p id="cart-flavor-name">No flavor chosen yet</p>
-            <p id="cart-flavor-price">$</p>
-            <p id="cart-liquid-name">No Liquid chosen yet</p>
-            <p id="cart-liquid-price">$</p>
-            <p id="cart-extra-name">No extra fruit chosen yet</p>
-            <p id="cart-extra-price">$</p>
-            <p id="cart-powder-name">No powder chosen yet</p>
-            <p id="cart-powder-price">$</p>
-            <button class="place_order"><a href="check-out.html">Place Order</a></button>
-        </div>
-            </section>
-             
-            
-              
-           
-        </aside>
-        <div id="comp-frame2">
-            <!-- <img class= "gif" src="img/blend.gif"> -->
-            
-            <div id="comp-empty-layer">
-            <!-- <img class="small" src="img/smoothie.png"></div> -->
-            <div id="comp-empty-layer"><img src="img/Empty-Jar.png" alt="Empty Jar" id="EmptyJar" /></div>
-            <div id="comp-flavor-layer"></div>
-                <div id="comp-liquid-layer"></div>
-                <div id="comp-extra-layer"></div>
-                <div id="comp-powder-layer"></div>
-               
-                <div id="cart-total">Total: $0</div>
-                
-            </div>
-          
-        </section>
-        
-           
-    </main>
-    
-    
-      
-            </div>
-    
-            
-               
-            
-       
-            <script src="js/script.js"></script>
-
-            <script>
-                //js code specfic to this page
-                updateCart();
-                </script>
- 
+   
+<h2>Check Out</h2>
+<main>
 
    
 
-<footer>&copy; Taylor Balcer</footer>
+ 
+
+
+  
+  
+
+
+    
+    <form class="checkout">
+        <div class="checkout-header">
+          <h1 class="checkout-title">
+            Checkout
+            <div id="comp-empty-layer">
+            <span class="checkout-price">$10</span>
+          </h1>
+        </div>
+        <p>
+          <input type="text" class="checkout-input checkout-name" placeholder="Your name" autofocus>
+          <input type="text" class="checkout-input checkout-exp" placeholder="MM">
+          <input type="text" class="checkout-input checkout-exp" placeholder="YY">
+        </p>
+        <p>
+          <input type="text" class="checkout-input checkout-card" placeholder="4111 1111 1111 1111">
+          <input type="text" class="checkout-input checkout-cvc" placeholder="CVC">
+        </p>
+        <p>
+          <input type="submit" value="Purchase" class="checkout-btn">
+        </p>
+      </form>
+    
+
+   
+    
+
+
+
+
+</div>
+  
+  
+</aside>
 
 <script src="js/script.js"></script>
+
+
+
+</main>
+
+<footer>&copy; Taylor Balcer</footer>
+<script src="js/script.js"></script>
+
 
         <script>
             //js code specfic to this page
@@ -116,5 +107,9 @@
 
 document.querySelectorAll("input")[1].addEventListener("click", eMail);
         </script>
+
+  </body>
+</html>
+
 </body>
 </html>
