@@ -107,12 +107,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 
 	h2{
 		font-family: 'Michroma', sans-serif;
-		font-size:2rem;
+		font-size:1.4rem;
 		color: black;
 		padding-bottom: 2rem;
 		animation: h2-an 10s linear forwards;
 		padding-top:2rem;
-		padding-left: 1rem;
+		
 	}
 	@keyframes h2-an{
 		0%{
@@ -132,12 +132,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 
 	.smaller_h2{
 		font-family: 'Michroma', sans-serif;
-		font-size:1.4rem;
+		font-size:1rem;
 		color: black;
 		padding-bottom: 2rem;
 		animation: h2-an 10s linear forwards;
 		padding-top:2rem;
-		padding-left: 1rem;
+	
 	}
 
 	@keyframes h2-an{
@@ -320,31 +320,21 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
-		width: 100%;
+		width: 60%;
+		
 		
 	}
-	figure{
+	/* figure{
 		/* width: 100%;
 		max-width: 300px;
 		margin: auto;
 		padding-left:2rem; */
 	
-	}
 	.img_content{
 		border-radius:40px;
 	}
 
-	.container-info{
-		display: grid;
-		grid-template-areas: "h4 img" "p p";
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: auto auto;
-		padding: .2rem;
-		
-		margin: 1rem 1rem 1rem 1rem;
-		
-		
-	}
+	
 	.container-contact{
 		display: grid;
 		grid-template-areas: "h4 img" "soc soc";
@@ -369,15 +359,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	
 	.my-pic{
 		transition: transform 1s ease .1s;
-		margin-left:1rem;
+		
 		width:100%;
 		margin-bottom:1rem;
-		border:#000 1px solid;
+		margin-top:1rem;
+		
 	}
 	
-	.my-pic:hover{
-		transform: scale(2);
-	}
 
 	.my-pic2{
 		grid-area: img;
@@ -630,7 +618,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	/* styling for smaller screen */
 	@media screen and (min-width: 480px){
 			html{
-			font-size:88%;
+			font-size:66%;
 			line-height:1.5rem;
 			}
 
@@ -641,8 +629,27 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 			h5{
 				font-size:2.7rem;
 			}
-
+			.container-info{
+				display: grid;
+				grid-template-areas: "h4 img" "p p";
+				grid-template-columns: 1fr 1fr;
+				grid-template-rows: auto auto;
+				padding: .2rem;
+				
+				margin: 1rem 1rem 1rem 1rem;
+				
+				
+			}
 		
+	img{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 60%;
+		padding:1rem;
+		
+		
+	}
 		
 
 		}
@@ -669,7 +676,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 		font-size:4rem;
 
 	}
-	
+	.container-info{
+		display: grid;
+		grid-template-areas: "h4 img" "p p";
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto auto;
+		padding: .2rem;
+		
+		margin: 1rem 1rem 1rem 1rem;
+		
+		
+	}
 	
 }
 
@@ -679,5 +696,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	}
 	.masthead{
 		margin: 0 2rem 0 2rem;
+	}
+	.container-info{
+		display: grid;
+		grid-template-areas: "h4 img" "p p";
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto auto;
+		padding: .2rem;
+		
+		margin: 1rem 1rem 1rem 1rem;
+		
+		
 	}
 }
