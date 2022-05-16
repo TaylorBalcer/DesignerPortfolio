@@ -200,22 +200,22 @@ if(!sessionStorage.powderName){
      //put proper text from var's into flavor area of cart
      document.querySelector("#cart-flavor-name").innerHTML = sessionStorage.flavorName;
    
-     document.querySelector("#cart-flavor-price").innerHTML= "$" + sessionStorage.flavorPrice;
+     document.querySelector("#cart-flavor-price").innerHTML= "$" + Number(sessionStorage.flavorPrice).toFixed(2);
      document.querySelector("#comp-flavor-layer").innerHTML= sessionStorage.flavorCompImage;
      //put proper text from var's into liquid area of cart
      document.querySelector("#cart-liquid-name").innerHTML = sessionStorage.liquidName;
     
-     document.querySelector("#cart-liquid-price").innerHTML= "$" + sessionStorage.liquidPrice;
+     document.querySelector("#cart-liquid-price").innerHTML= "$" + Number(sessionStorage.liquidPrice).toFixed(2);
      document.querySelector("#comp-liquid-layer").innerHTML= sessionStorage.liquidCompImage;
     //put proper text from var's into extra area of cart
     document.querySelector("#cart-extra-name").innerHTML = sessionStorage.extraName;
     
-     document.querySelector("#cart-extra-price").innerHTML= "$" + sessionStorage.extraPrice;
+     document.querySelector("#cart-extra-price").innerHTML= "$" + Number(sessionStorage.extraPrice).toFixed(2);
      document.querySelector("#comp-extra-layer").innerHTML= sessionStorage.extraCompImage;
              //put proper text from var's into pwoder area of cart
     document.querySelector("#cart-powder-name").innerHTML = sessionStorage.powderName;
     
-     document.querySelector("#cart-powder-price").innerHTML= "$" + sessionStorage.powderPrice;
+     document.querySelector("#cart-powder-price").innerHTML= "$" +  Number(sessionStorage.powderPrice).toFixed(2);
      document.querySelector("#comp-powder-layer").innerHTML= sessionStorage.powderCompImage;
      
     document.querySelector("#cart-total").innerHTML = "Total: $" + getCartTotal();

@@ -3,7 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>Your Goldenne Fruit</title>
+    <title>Cart</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@700&family=Comfortaa:wght@300&family=Montserrat:wght@100&family=Pathway+Gothic+One&family=Prata&display=swap" rel="stylesheet">
@@ -11,10 +12,9 @@
 </head>
 
 <body>
-    
     <header class="masthead">
         
-        <h1 class="masthead__logo"><img src="img/goldenne_logo.png" alt="Goldenne Fruit" id="logo"/></h1>
+        <h1 class="masthead__logo"><img src="img/goldenne_logo.svg" alt="Goldenne Fruit" id="logo"/></h1>
         
     </header>
     <nav id="main-navigation">
@@ -29,17 +29,33 @@
           <li><a href="cart.html"   class="nav-button" >Cart</a></li>
         </ul>
       </nav>
-    
-    <h2>Cart -- Goldenne Fruit </h2>
-    <main>
+    <h2>Your Goldenne Fruit Smoothie </h2>
+    <div class="flex-container">
+<main>
 
-        <aside class="cart3">
-            <div class="content">
-                  
+   
+    <div id="comp-frame">
+            <div id="comp-empty-layer"><img src="img/Empty-Jar.png" alt="Empty Jar" id="EmptyJar" /></div>
+                <div id="comp-flavor-layer"></div>
+                <div id="comp-liquid-layer"></div>
+                <div id="comp-extra-layer"></div>
+                <div id="comp-powder-layer"></div>
+                <div id="cart-total">Total: $0</div>
+        </div>
+           
+
+              <img class ="smaller" src="img/smoothie-blend.gif">
+        
+   
+
+        
+        
+        </main> 
+       
+        <aside class="cart">
             <section class="cart-box">
-                <h2 class="flavor">Chosen Items</h2>
-            
-                <p id="cart-flavor-name">No flavor chosen yet</p>
+            <h2 class= "flavor">Extra Chosen</h2>
+            <p id="cart-flavor-name">No flavor chosen yet</p>
             <p id="cart-flavor-price">$</p>
             <p id="cart-liquid-name">No Liquid chosen yet</p>
             <p id="cart-liquid-price">$</p>
@@ -47,53 +63,40 @@
             <p id="cart-extra-price">$</p>
             <p id="cart-powder-name">No powder chosen yet</p>
             <p id="cart-powder-price">$</p>
-            <button class="place_order"><a href="check-out.html">Place Order</a></button>
-        </div>
             </section>
-             
-            
-              
-           
-        </aside>
-        <div id="comp-frame2">
-            <!-- <img class= "gif" src="img/blend.gif"> -->
-            
-            <div id="comp-empty-layer">
-            <!-- <img class="small" src="img/smoothie.png"></div> -->
-            <div id="comp-empty-layer"><img src="img/Empty-Jar.png" alt="Empty Jar" id="EmptyJar" /></div>
-            <div id="comp-flavor-layer"></div>
-                <div id="comp-liquid-layer"></div>
-                <div id="comp-extra-layer"></div>
-                <div id="comp-powder-layer"></div>
-               
-                <div id="cart-total">Total: $0</div>
-                
-            </div>
-          
-        </section>
+        </div>
+    
         
-           
-    </main>
-    
-    
-      
-            </div>
-    
-            
-               
-            
-       
-            <script src="js/script.js"></script>
-
-            <script>
-                //js code specfic to this page
-                updateCart();
-                </script>
- 
-
    
+        <!-- <div class="content">
+            <section class= Arrowleft>
+                
+              <a href="liquid.html"  class="masthead__nav-link2">
+                  <img src="img/Arrowleft.png" alt="Arrow Left" id="Arrowleft" /> 
+                  <h4>Liquid</h4>  
+                </a>
+                </section>
+                
+                <section class= Arrowright>
+                    
+                  <a href="powder.html"  class="masthead__nav-link2">
+                  <img src="img/Arrowright.png" alt="Arrow Right" id="Arrowright" /> 
+                  <h4>Powder</h4> 
+                </a>
+                </section>
+            </div> -->
+
+    
+    
+</section>
+
+</aside>
+</div>
+
+
 
 <footer>&copy; Taylor Balcer</footer>
+
 
 <script src="js/script.js"></script>
 
@@ -101,20 +104,16 @@
             //js code specfic to this page
             updateCart();//populate the cart right away
             //event listeners
-            //when water selection is clicked, execute funtion
-            document.querySelector("#springwater").addEventListener("click" , choseWater);
+            //when berry selection is clicked, execute funtion
+            document.querySelector("#goldenberries").addEventListener("click" , choseGolden);
             
-            //when pom juice selection is clicked, execute funtion
-            document.querySelector("#pomjuice").addEventListener("click" , chosePom);
-            //when orange juice selection is clicked, execute funtion
-            document.querySelector("#orangejuice").addEventListener("click" , choseOrange);
+            //when super green selection is clicked, execute funtion
+            document.querySelector("#dragonfruit").addEventListener("click" , choseDragon);
+            //when tropical selection is clicked, execute funtion
+            document.querySelector("#banana").addEventListener("click" , choseBanana);
+
 
            
- 
-       
- 
-
-document.querySelectorAll("input")[1].addEventListener("click", eMail);
         </script>
-</body>
+    </body>
 </html>

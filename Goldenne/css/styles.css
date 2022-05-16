@@ -513,13 +513,13 @@ span {
 
 
 .order_button a:visited {
-	color: white;
+	color: #f75a3b;
 }
 .order_button a:active {
-	color: white;
+	color: #fade7d;
 }
 .order_button a:hover{
-	color: white;
+	color: #982b1f;
 }
 .order_button a:visited {
 	color: white;
@@ -821,7 +821,11 @@ checkout styling */
    border: 0 !important;
  }
 
-
+.smaller{
+Width:100%;
+max-width:46%;
+margin:auto 0;
+}
 
 /* Styling for MOBILE LANDSCAPE ONLY */
 
@@ -1055,7 +1059,7 @@ checkout styling */
 
     #comp-frame2 {
         width: 40%;
-        height: 112vh;
+        height: 92vh;
         position: relative;
         background-color: #fade7d;
     }
@@ -1540,5 +1544,12 @@ checkout styling */
       padding: 0 !important;
       border: 0 !important;
     }
+
+    .smaller{
+      Width:100%;
+  
+      max-width:35%;
+      margin:0 auto;
+      }
 
 }
