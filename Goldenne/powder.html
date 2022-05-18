@@ -7,7 +7,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@700&family=Comfortaa:wght@300&family=Montserrat:wght@100&family=Pathway+Gothic+One&family=Prata&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Roboto+Flex:opsz,wght@8..144,300&family=Saira+Condensed:wght@300&family=Varela+Round&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <script src="https://kit.fontawesome.com/69a9e0c5d6.js" crossorigin="anonymous"></script>
 </head>
@@ -122,6 +122,53 @@
             document.querySelector("#ginger").addEventListener("click" , choseGinger);
             //when tropical selection is clicked, execute funtion
             document.querySelector("#bluepowder").addEventListener("click" , choseBlue);
+/**
+ * this method changes the border color from green back to gold when hovering
+ * @param bcolor       the border color
+ */
+ const changeBoxStyle7 = (bcolor) => {
+    document.querySelector("#turmericpowder").style.border = bcolor;
+
+}
+document.querySelector("#turmericpowder").addEventListener("mouseover", () => {
+    changeBoxStyle7("solid 3px #080");
+});
+
+document.querySelector("#turmericpowder").addEventListener("mouseout", () => {
+    changeBoxStyle7("solid 3px #fc0");
+});
+
+/**
+ * this method changes the border color from green back to gold when hovering
+ * @param bcolor       the border color
+ */
+ const changeBoxStyle8 = (bcolor) => {
+    document.querySelector("#ginger").style.border = bcolor;
+
+}
+document.querySelector("#ginger").addEventListener("mouseover", () => {
+    changeBoxStyle8("solid 3px #080");
+});
+
+document.querySelector("#ginger").addEventListener("mouseout", () => {
+    changeBoxStyle8("solid 3px #fc0");
+});
+
+/**
+ * this method changes the border color from green back to gold when hovering
+ * @param bcolor       the border color
+ */
+ const changeBoxStyle9 = (bcolor) => {
+    document.querySelector("#bluepowder").style.border = bcolor;
+
+}
+document.querySelector("#bluepowder").addEventListener("mouseover", () => {
+    changeBoxStyle9("solid 3px #080");
+});
+
+document.querySelector("#bluepowder").addEventListener("mouseout", () => {
+    changeBoxStyle9("solid 3px #fc0");
+});
 
 
            

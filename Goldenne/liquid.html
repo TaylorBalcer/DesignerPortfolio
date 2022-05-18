@@ -7,7 +7,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@700&family=Comfortaa:wght@300&family=Montserrat:wght@100&family=Pathway+Gothic+One&family=Prata&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Roboto+Flex:opsz,wght@8..144,300&family=Saira+Condensed:wght@300&family=Varela+Round&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <script src="https://kit.fontawesome.com/69a9e0c5d6.js" crossorigin="anonymous"></script>
 </head>
@@ -30,7 +30,7 @@
           <li><a href="cart.html"   class="nav-button" ><i class="fa-solid fa-cart-shopping"></i></a></li>
         </ul>
       </nav>
-    <h2>Customize your Liquid -- Goldenne Fruit </h2>
+    <h2>Customize your Liquid</h2>
     <div class="flex-container">
 <main>
 
@@ -117,6 +117,53 @@
             document.querySelector("#pomjuice").addEventListener("click" , chosePom);
             //when orange juice selection is clicked, execute funtion
             document.querySelector("#orangejuice").addEventListener("click" , choseOrange);
+/**
+ * this method changes the border color from green back to gold when hovering
+ * @param bcolor       the border color
+ */
+ const changeBoxStyle4 = (bcolor) => {
+    document.querySelector("#springwater").style.border = bcolor;
+
+}
+document.querySelector("#springwater").addEventListener("mouseover", () => {
+    changeBoxStyle4("solid 3px #080");
+});
+
+document.querySelector("#springwater").addEventListener("mouseout", () => {
+    changeBoxStyle4("solid 3px #fc0");
+});
+
+/**
+ * this method changes the border color from green back to gold when hovering
+ * @param bcolor       the border color
+ */
+ const changeBoxStyle5 = (bcolor) => {
+    document.querySelector("#pomjuice").style.border = bcolor;
+
+}
+document.querySelector("#pomjuice").addEventListener("mouseover", () => {
+    changeBoxStyle5("solid 3px #080");
+});
+
+document.querySelector("#pomjuice").addEventListener("mouseout", () => {
+    changeBoxStyle5("solid 3px #fc0");
+});
+
+/**
+ * this method changes the border color from green back to gold when hovering
+ * @param bcolor       the border color
+ */
+ const changeBoxStyle6 = (bcolor) => {
+    document.querySelector("#orangejuice").style.border = bcolor;
+
+}
+document.querySelector("#orangejuice").addEventListener("mouseover", () => {
+    changeBoxStyle6("solid 3px #080");
+});
+
+document.querySelector("#orangejuice").addEventListener("mouseout", () => {
+    changeBoxStyle6("solid 3px #fc0");
+});
 
 
            

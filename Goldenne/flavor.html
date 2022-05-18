@@ -6,8 +6,8 @@
     <title>Flavor</title>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@700&family=Comfortaa:wght@300&family=Montserrat:wght@100&family=Pathway+Gothic+One&family=Prata&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Roboto+Flex:opsz,wght@8..144,300&family=Saira+Condensed:wght@300&family=Varela+Round&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <script src="https://kit.fontawesome.com/69a9e0c5d6.js" crossorigin="anonymous"></script>
 </head>
@@ -122,6 +122,56 @@
             document.querySelector("#supergreensblend").addEventListener("click" , choseSuperGreens);
             //when tropical selection is clicked, execute funtion
             document.querySelector("#tropicalblend").addEventListener("click" , choseTropical);
+
+/**
+ * this method changes the border color from green back to gold when hovering
+ * @param bcolor       the border color
+ */
+ const changeBoxStyle = (bcolor) => {
+    document.querySelector("#berryblend").style.border = bcolor;
+
+}
+document.querySelector("#berryblend").addEventListener("mouseover", () => {
+    changeBoxStyle("solid 3px #080");
+});
+
+document.querySelector("#berryblend").addEventListener("mouseout", () => {
+    changeBoxStyle("solid 3px #fc0");
+});
+
+/**
+ * this method changes the border color from green back to gold when hovering
+ * @param bcolor       the border color
+ */
+ const changeBoxStyle1 = (bcolor) => {
+    document.querySelector("#supergreensblend").style.border = bcolor;
+
+}
+document.querySelector("#supergreensblend").addEventListener("mouseover", () => {
+    changeBoxStyle1("solid 3px #080");
+});
+
+document.querySelector("#supergreensblend").addEventListener("mouseout", () => {
+    changeBoxStyle1("solid 3px #fc0");
+});
+
+/**
+ * this method changes the border color from green back to gold when hovering
+ * @param bcolor       the border color
+ */
+ const changeBoxStyle3 = (bcolor) => {
+    document.querySelector("#tropicalblend").style.border = bcolor;
+
+}
+document.querySelector("#tropicalblend").addEventListener("mouseover", () => {
+    changeBoxStyle3("solid 3px #080");
+});
+
+document.querySelector("#tropicalblend").addEventListener("mouseout", () => {
+    changeBoxStyle3("solid 3px #fc0");
+});
+
+
 
 
            

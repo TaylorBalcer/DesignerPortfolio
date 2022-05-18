@@ -7,7 +7,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@700&family=Comfortaa:wght@300&family=Montserrat:wght@100&family=Pathway+Gothic+One&family=Prata&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Roboto+Flex:opsz,wght@8..144,300&family=Saira+Condensed:wght@300&family=Varela+Round&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <script src="https://kit.fontawesome.com/69a9e0c5d6.js" crossorigin="anonymous"></script>
 </head>
@@ -30,7 +30,12 @@
           <li><a href="cart.html"   class="nav-button" ><i class="fa-solid fa-cart-shopping"></i></a></li>
         </ul>
       </nav>
-    <h2>Your Goldenne Fruit Smoothie </h2>
+      <h2 id="welcome"> </h2>
+      <script>
+          window.onload = function() {
+              document.getElementById('welcome').innerText = localStorage.getItem('userName') + "'s Goldenne Fruit Smoothie";
+          };
+      </script>
     <div class="flex-container">
 <main>
 
@@ -92,7 +97,9 @@
             //when tropical selection is clicked, execute funtion
             document.querySelector("#banana").addEventListener("click" , choseBanana);
 
-
+            window.onload = function() {
+        document.getElementById('welcome').innerText = "Hello, " + sessionStorage.getItem('userName');
+    };
            
         </script>
     </body>

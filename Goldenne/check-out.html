@@ -7,7 +7,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@700&family=Comfortaa:wght@300&family=Montserrat:wght@100&family=Pathway+Gothic+One&family=Prata&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Roboto+Flex:opsz,wght@8..144,300&family=Saira+Condensed:wght@300&family=Varela+Round&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <script src="https://kit.fontawesome.com/69a9e0c5d6.js" crossorigin="anonymous"></script>
 </head>
@@ -33,42 +33,10 @@
       </nav>
     
    
-<h2>Check Out</h2>
+<h2><div id="cart-total">Total: $0</div></h2>
 <main>
 
-   
 
- 
-
-
-  
-  
-
-
-    
-   
-         
-    <div id="comp-frame2">
-      <div id="comp-empty-layer"><img src="img/Empty-Jar.png" alt="Empty Jar" id="EmptyJar" /></div>
-          <div id="comp-flavor-layer"></div>
-          <div id="comp-liquid-layer"></div>
-          <div id="comp-extra-layer"></div>
-          <div id="comp-powder-layer"></div>
-
-    </div>
-    
-            <section class="cart-box3">
-             
-              <p id="cart-flavor-name">No flavor chosen yet</p>
-              <p id="cart-flavor-price">$</p>
-              <p id="cart-liquid-name">No Liquid chosen yet</p>
-              <p id="cart-liquid-price">$</p>
-              <p id="cart-extra-name">No extra fruit chosen yet</p>
-              <p id="cart-extra-price">$</p>
-              <p id="cart-powder-name">No powder chosen yet</p>
-              <p id="cart-powder-price">$</p>
-            </section>
-         
           
             <form class="checkout">
               <div class="checkout-header">
@@ -79,18 +47,21 @@
                   
                 </h1>
               </div>
+              
               <p>
                 
           <input type="text" class="checkout-input checkout-name" placeholder="Your name" autofocus>
+          <p>
+            <input type="text" class="checkout-input checkout-card" placeholder="4111 1111 1111 1111">
+          </p>
+          <p>
           <input type="text" class="checkout-input checkout-exp" placeholder="MM">
           <input type="text" class="checkout-input checkout-exp" placeholder="YY">
-        </p>
-        <p>
-          <input type="text" class="checkout-input checkout-card" placeholder="4111 1111 1111 1111">
           <input type="text" class="checkout-input checkout-cvc" placeholder="CVC">
         </p>
+     
         <p>
-          <div id="cart-total">Total: $0</div>
+          
          <input type="submit" value="Purchase" class="checkout-btn"> <a href="comfirm.html" ></a>
         </p>
       </form>
@@ -112,7 +83,28 @@
 
 
 </main>
+      
+<div id="comp-frame2">
+  <div id="comp-empty-layer"><img src="img/Empty-Jar.png" alt="Empty Jar" id="EmptyJar" /></div>
+      <div id="comp-flavor-layer"></div>
+      <div id="comp-liquid-layer"></div>
+      <div id="comp-extra-layer"></div>
+      <div id="comp-powder-layer"></div>
 
+</div>
+
+        <section class="cart-box3">
+         
+          <p id="cart-flavor-name">No flavor chosen yet</p>
+          <p id="cart-flavor-price">$</p>
+          <p id="cart-liquid-name">No Liquid chosen yet</p>
+          <p id="cart-liquid-price">$</p>
+          <p id="cart-extra-name">No extra fruit chosen yet</p>
+          <p id="cart-extra-price">$</p>
+          <p id="cart-powder-name">No powder chosen yet</p>
+          <p id="cart-powder-price">$</p>
+        </section>
+     
 <footer>&copy; Taylor Balcer</footer>
 <script src="js/script.js"></script>
 
