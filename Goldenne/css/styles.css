@@ -530,11 +530,11 @@ span {
 
 
 .order_button {
-	font-size: 1.5rem;
+	font-size: 1rem;
 	text-decoration: none;
 	color: #fade7d;
 	background: #669219;
-	padding: 12px 40px;
+	padding: 12px 20px;
 	border-radius: 4px;
 	font-weight: normal;
 	text-transform: uppercase;
@@ -544,18 +544,24 @@ span {
 
 
 }
+.masthead__nav-link2 i{
+  font-size:2rem;
+}
 
+.masthead__nav-link2 {
+  font-size:2rem;
+}
 
-.order_button a:visited {
+.order_button:visited {
 	color: #f75a3b;
 }
-.order_button a:active {
+.order_button:active {
 	color: #fade7d;
 }
-.order_button a:hover{
+.order_button:hover{
 	color: #982b1f;
 }
-.order_button a:visited {
+.order_button:link {
 	color: white;
 }
 
@@ -568,9 +574,18 @@ checkout styling */
 .place_order{
     margin:.5rem;
     font-size:.9rem;
-    padding:1rem 198px;
+    padding:1rem 155px;
     background-color:#f9ab00;
     border:#669219 1px solid;
+    font-size: 1rem;
+      text-decoration: none;
+      color: #ca4f4f;
+     
+      padding: 15px 40px;
+      border-radius: 4px;
+      font-weight: normal;
+      text-transform: uppercase;
+      transition: all 0.2s ease-in-out;
  }
 
  .place_order a{ 
@@ -806,7 +821,7 @@ padding-left:1rem;
   
 
     .order_button {
-        font-size: 1.5rem;
+        font-size: 1rem;
         text-decoration: none;
         color: #fade7d;
         background: #669219;
@@ -824,8 +839,17 @@ padding-left:1rem;
         cursor: pointer; */
     }
 
-    .order_button a:visited {
-        color: white;
+    .order_button:visited {
+      color: #f75a3b;
+    }
+    .order_button:active {
+      color: #fade7d;
+    }
+    .order_button:hover{
+      color: #982b1f;
+    }
+    .order_button:link {
+      color: white;
     }
 
     .glow-button:hover {
@@ -1018,7 +1042,7 @@ padding-left:1rem;
   
 
     .order_button {
-        font-size: 1.5rem;
+        font-size: 1rem;
         text-decoration: none;
         color: #fade7d;
         background: #669219;
@@ -1036,8 +1060,17 @@ padding-left:1rem;
         cursor: pointer; */
     }
 
-    .order_button a:visited {
-        color: white;
+    .order_button:visited {
+      color: #f75a3b;
+    }
+    .order_button:active {
+      color: #fade7d;
+    }
+    .order_button:hover{
+      color: #982b1f;
+    }
+    .order_button:link {
+      color: white;
     }
 
     .glow-button:hover {
@@ -1051,15 +1084,33 @@ padding-left:1rem;
     }
 
     .place_order{
-        margin:.5rem;
-        font-size:.9rem;
-       
-        background-color:#f9ab00;
+      font-size: 1rem;
+      text-decoration: none;
+      color: #ca4f4f;
+      background: #669219;
+      padding: 15px 40px;
+      border-radius: 4px;
+      font-weight: normal;
+      text-transform: uppercase;
+      transition: all 0.2s ease-in-out;
+     
+      /* align-content: center;
+      top: 50%;
+      left: 92%;
+      transform: translate(-2%, -230%);
+      -ms-transform: translate(-20%, -90%);
+      cursor: pointer; */
      }
 
      .place_order a{
          font-size:1rem;
      }
+
+     
+    .glow-button2:hover {
+      color: #679550;
+      box-shadow: 0 5px 15px rgba(248, 244, 10, 0.4);
+      }
 
 .heading {
     position: relative;
@@ -1093,5 +1144,7 @@ padding-left:1rem;
         background-color:#f9ab00;
      }
     
-
+#welcome{
+  font-size:1.6rem;
+}
 }

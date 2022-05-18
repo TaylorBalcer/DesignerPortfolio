@@ -1,41 +1,41 @@
 //Javascript Document Demo 5
 //IF USER HASNT MADE CHOICES DECLARE (INITIALIZE) WEB STORAGE VARIABLE WITH DEFAULT MESSAGES:
-if(!localStorage.flavorName){
-    localStorage.flavorName = "No Flavor Chosen Yet";
-    localStorage.flavorCompImage = "";
-    localStorage.flavorPrice = 0;
+if(!sessionStorage.flavorName){
+    sessionStorage.flavorName = "No Flavor Chosen Yet";
+    sessionStorage.flavorCompImage = "";
+    sessionStorage.flavorPrice = 0;
 
 }
 
-if(!localStorage.liquidName){
-    localStorage.liquidName= "No Liquid Chosen Yet";
-    localStorage.liquidCompImage = "";
-    localStorage.liquidPrice= 0;
+if(!sessionStorage.liquidName){
+    sessionStorage.liquidName= "No Liquid Chosen Yet";
+    sessionStorage.liquidCompImage = "";
+    sessionStorage.liquidPrice= 0;
 }
 
 
-if(!localStorage.extraName){
-    localStorage.extraName= "No Extras Chosen Yet";
-    localStorage.extraCompImage = "";
-    localStorage.extraPrice= 0;
+if(!sessionStorage.extraName){
+    sessionStorage.extraName= "No Extras Chosen Yet";
+    sessionStorage.extraCompImage = "";
+    sessionStorage.extraPrice= 0;
 
 
-if(!localStorage.powderName){
-    localStorage.powderName= "No Powder Chosen Yet";
-    localStorage.powderCompImage = "";
-    localStorage.powderPrice= 0;
+if(!sessionStorage.powderName){
+    sessionStorage.powderName= "No Powder Chosen Yet";
+    sessionStorage.powderCompImage = "";
+    sessionStorage.powderPrice= 0;
 }
 }
 
 //FUNCTION DEFINTIONS
 /**
  * This method adds Berry Blend info to cart
- */const choseBerry = () => {
+ */const choseBerry = () => { 
      //store user's choices in Web storage
-     localStorage.flavorName = "Berry Blend";
+     sessionStorage.flavorName = "Berry Blend";
     //  sessionStorage.flavorImage = "img/Berryjar.png"
-     localStorage.flavorPrice= 2.99;
-     localStorage.flavorCompImage= '<img src="img/composite/Berry-jar.png" />';
+     sessionStorage.flavorPrice= 2.99;
+     sessionStorage.flavorCompImage= '<img src="img/composite/Berry-jar.png" />';
      updateCart(); //call that function right away
      
      
@@ -45,10 +45,10 @@ if(!localStorage.powderName){
  * This method adds Super Greens Blend info to cart
  */const choseSuperGreens = () => {
      //store user's choices in Web storage
-     localStorage.flavorName = "Super Greens Blend ";
+     sessionStorage.flavorName = "Super Greens Blend ";
     //  sessionStorage.flavorImage = "img/SuperGreensJar.png"
-     localStorage.flavorPrice= 3.99;
-     localStorage.flavorCompImage= '<img src="img/composite/Super-Greens-Jar.png" />';
+     sessionStorage.flavorPrice= 3.99;
+     sessionStorage.flavorCompImage= '<img src="img/composite/Super-Greens-Jar.png" />';
      updateCart(); //call that function right away
      
      
@@ -58,10 +58,10 @@ if(!localStorage.powderName){
  * This method adds Tropical Blend info to cart
  */const choseTropical = () => {
      //store user's choices in Web storage
-     localStorage.flavorName = "Tropical Blend";
+     sessionStorage.flavorName = "Tropical Blend";
     //  sessionStorage.flavorImage = "img/TropicalJar.png"
-     localStorage.flavorPrice= 2.99;
-     localStorage.flavorCompImage= '<img src="img/composite/Tropical-Jar.png" />';
+     sessionStorage.flavorPrice= 2.99;
+     sessionStorage.flavorCompImage= '<img src="img/composite/Tropical-Jar.png" />';
      updateCart(); //call that function right away
      
      
@@ -72,9 +72,9 @@ if(!localStorage.powderName){
  * This method adds Spring water info to cart
  */const choseWater= () => {
      //store user's choices in Web storage
-     localStorage.liquidName = "Spring Water";
-     localStorage.liquidPrice= 1.00;
-     localStorage.liquidCompImage= '<img src="img/composite/Water-jar.png" />'
+     sessionStorage.liquidName = "Spring Water";
+     sessionStorage.liquidPrice= 1.00;
+     sessionStorage.liquidCompImage= '<img src="img/composite/Water-jar.png" />'
      updateCart(); //call that function right away
      
      
@@ -83,9 +83,9 @@ if(!localStorage.powderName){
  * This method adds Pom Juice info to cart
  */const chosePom = () => {
      //store user's choices in Web storage
-     localStorage.liquidName = "Pomegranate Juice";
-     localStorage.liquidPrice= 1.99;
-     localStorage.liquidCompImage= '<img src="img/composite/Pom-jar.png" />';
+     sessionStorage.liquidName = "Pomegranate Juice";
+     sessionStorage.liquidPrice= 1.99;
+     sessionStorage.liquidCompImage= '<img src="img/composite/Pom-jar.png" />';
      updateCart(); //call that function right away
      
      
@@ -95,10 +95,10 @@ if(!localStorage.powderName){
  * This method adds Orange Juice info to cart
  */const choseOrange = () => {
      //store user's choices in Web storage
-     localStorage.liquidName = "Orange Juice";
+     sessionStorage.liquidName = "Orange Juice";
     
-     localStorage.liquidPrice= 1.35;
-     localStorage.liquidCompImage= '<img src="img/composite/Orange-jar.png" />'
+     sessionStorage.liquidPrice= 1.35;
+     sessionStorage.liquidCompImage= '<img src="img/composite/Orange-jar.png" />'
      updateCart(); //call that function right away
      
      
@@ -108,9 +108,9 @@ if(!localStorage.powderName){
  * This method adds golden berries  info to cart
  */const choseGolden= () => {
      //store user's choices in Web storage
-     localStorage.extraName = "Golden Berries";
-     localStorage.extraPrice= 1.99;
-     localStorage.extraCompImage= '<img src="img/composite/Golden-jar.png" />'
+     sessionStorage.extraName = "Golden Berries";
+     sessionStorage.extraPrice= 1.99;
+     sessionStorage.extraCompImage= '<img src="img/composite/Golden-jar.png" />'
      updateCart(); //call that function right away
      
      
@@ -119,9 +119,9 @@ if(!localStorage.powderName){
  * This method adds Dragon info to cart
  */const choseDragon = () => {
      //store user's choices in Web storage
-     localStorage.extraName = "Dragon Fruit";
-     localStorage.extraPrice= 1.99;
-     localStorage.extraCompImage= '<img src="img/composite/Dragon-jar.png" />';
+     sessionStorage.extraName = "Dragon Fruit";
+     sessionStorage.extraPrice= 1.99;
+     sessionStorage.extraCompImage= '<img src="img/composite/Dragon-jar.png" />';
      updateCart(); //call that function right away
      
      
@@ -131,10 +131,10 @@ if(!localStorage.powderName){
  * This method adds Banana info to cart
  */const choseBanana = () => {
      //store user's choices in Web storage
-     localStorage.extraName = "Banana";
+     sessionStorage.extraName = "Banana";
     
-     localStorage.extraPrice= 1.00;
-     localStorage.extraCompImage= '<img src="img/composite/Banana-jar.png" />'
+     sessionStorage.extraPrice= 1.00;
+     sessionStorage.extraCompImage= '<img src="img/composite/Banana-jar.png" />'
      updateCart(); //call that function right away
      
      
@@ -143,9 +143,9 @@ if(!localStorage.powderName){
  * This method adds Turmeric info to cart
  */const choseTurmeric= () => {
      //store user's choices in Web storage
-     localStorage.powderName = "Turmeric Powder";
-     localStorage.powderPrice= .50;
-     localStorage.powderCompImage= '<img src="img/composite/Turmeric-jar.png" />'
+     sessionStorage.powderName = "Turmeric Powder";
+     sessionStorage.powderPrice= .50;
+     sessionStorage.powderCompImage= '<img src="img/composite/Turmeric-jar.png" />'
      updateCart(); //call that function right away
      
      
@@ -154,9 +154,9 @@ if(!localStorage.powderName){
  * This method adds Ginger info to cart
  */const choseGinger = () => {
      //store user's choices in Web storage
-     localStorage.powderName = "Ginger Powder";
-     localStorage.powderPrice= .50;
-     localStorage.powderCompImage= '<img src="img/composite/Ginger-jar.png" />';
+     sessionStorage.powderName = "Ginger Powder";
+     sessionStorage.powderPrice= .50;
+     sessionStorage.powderCompImage= '<img src="img/composite/Ginger-jar.png" />';
      updateCart(); //call that function right away
      
      
@@ -166,10 +166,10 @@ if(!localStorage.powderName){
  * This method adds Blue Spirulina info to cart
  */const choseBlue = () => {
      //store user's choices in Web storage
-     localStorage.powderName = "Blue Spirulina";
+     sessionStorage.powderName = "Blue Spirulina";
     
-     localStorage.powderPrice= .50;
-     localStorage.powderCompImage= '<img src="img/composite/Spirulina-jar.png" />'
+     sessionStorage.powderPrice= .50;
+     sessionStorage.powderCompImage= '<img src="img/composite/Spirulina-jar.png" />'
      updateCart(); //call that function right away
      
      
@@ -181,11 +181,11 @@ if(!localStorage.powderName){
   */
  const getCartTotal = () =>{
      //convert each items price to a number and rout it to 2 dec places
-     let fPrice = Number(localStorage.flavorPrice).toFixed(2);
-     let lPrice = Number(localStorage.liquidPrice).toFixed(2);
+     let fPrice = Number(sessionStorage.flavorPrice).toFixed(2);
+     let lPrice = Number(sessionStorage.liquidPrice).toFixed(2);
      
-     let ePrice = Number(localStorage.extraPrice).toFixed(2);
-     let pPrice = Number(localStorage.powderPrice).toFixed(2);
+     let ePrice = Number(sessionStorage.extraPrice).toFixed(2);
+     let pPrice = Number(sessionStorage.powderPrice).toFixed(2);
      
      //add the price vars and store in a new var
      let totalPrice = Number(fPrice)+ Number(lPrice)+ Number(ePrice)+ Number(pPrice);
@@ -196,7 +196,7 @@ if(!localStorage.powderName){
  
  
 
- const updateCart=() => {
+ const updateCart=() => { 
      //put proper text from var's into flavor area of cart
      document.querySelector("#cart-flavor-name").innerHTML = sessionStorage.flavorName;
    
