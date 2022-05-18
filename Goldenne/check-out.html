@@ -32,10 +32,14 @@
         </ul>
       </nav>
     
-   
+      <h2 id="welcome"> </h2>
+      <script>
+          window.onload = function() {
+              document.getElementById('welcome').innerText = localStorage.getItem('userName') + "'s Goldenne Fruit Smoothie";
+          };
+      </script>
 <h2><div id="cart-total">Total: $0</div></h2>
 <main>
-
 
           
             <form class="checkout">
@@ -62,7 +66,7 @@
      
         <p>
           
-         <input type="submit" value="Purchase" class="checkout-btn"> <a href="comfirm.html" ></a>
+         <input type="submit" onclick="submitForm()" value="Purchase" class="checkout-btn"> <a href="comfirm.html" ></a>
         </p>
       </form>
     
@@ -114,7 +118,10 @@
             updateCart();//populate the cart right away
             //event listeners
             //when water selection is clicked, execute funtion
-         
+            function submitForm() {
+        alert("Thank you for choosing Goldenne Fruit, your order has been placed ");
+        window.open("index.html");
+      }
         </script>
 
   </body>
