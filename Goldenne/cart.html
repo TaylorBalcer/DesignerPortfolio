@@ -9,24 +9,25 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@700&family=Comfortaa:wght@300&family=Montserrat:wght@100&family=Pathway+Gothic+One&family=Prata&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/69a9e0c5d6.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header class="masthead">
         
-        <h1 class="masthead__logo"><img src="img/goldenne_logo.svg" alt="Goldenne Fruit" id="logo"/></h1>
+        <h1 class="masthead__logo"><a href="index.html"   class="nav-button" > <img src="img/goldenne_logo.svg" alt="Goldenne Fruit" id="logo"/></h1></a>
         
     </header>
     <nav id="main-navigation">
 
         <ul class="main-menu">
-          <li><a href="index.html"   class="nav-button" >Home</a></li>
+          <!-- <li><a href="index.html"   class="nav-button" >Home</a></li> -->
           <li><a href="flavor.html"   class="nav-button" >Flavor</a></li>
           <li><a href="liquid.html"   class="nav-button" >Liquid</a></li>
        
           <li><a href="extra-fruit.html"   class="nav-button" >Extra</a></li>
           <li><a href="powder.html"   class="nav-button" >Powder</a></li>
-          <li><a href="cart.html"   class="nav-button" >Cart</a></li>
+          <li><a href="cart.html"   class="nav-button" ><i class="fa-solid fa-cart-shopping"></i></a></li>
         </ul>
       </nav>
     <h2>Your Goldenne Fruit Smoothie </h2>
@@ -40,10 +41,12 @@
                 <div id="comp-liquid-layer"></div>
                 <div id="comp-extra-layer"></div>
                 <div id="comp-powder-layer"></div>
+                
                 <div id="cart-total">Total: $0</div>
+              
         </div>
            
-
+        
               <img class ="smaller" src="img/smoothie-blend.gif">
         
    
@@ -53,8 +56,9 @@
         </main> 
        
         <aside class="cart">
-            <section class="cart-box">
-            <h2 class= "flavor">Extra Chosen</h2>
+            
+            <section class="cart-box2">
+            <h2 class= "flavor">CART </h2>
             <p id="cart-flavor-name">No flavor chosen yet</p>
             <p id="cart-flavor-price">$</p>
             <p id="cart-liquid-name">No Liquid chosen yet</p>
@@ -62,33 +66,10 @@
             <p id="cart-extra-name">No extra fruit chosen yet</p>
             <p id="cart-extra-price">$</p>
             <p id="cart-powder-name">No powder chosen yet</p>
-            <p id="cart-powder-price">$</p>
+            <p id="cart-powder-price">$ </p>
+            <button class="place_order"> <a href="check-out.html">Check Out</a></button>
             </section>
         </div>
-    
-        
-   
-        <!-- <div class="content">
-            <section class= Arrowleft>
-                
-              <a href="liquid.html"  class="masthead__nav-link2">
-                  <img src="img/Arrowleft.png" alt="Arrow Left" id="Arrowleft" /> 
-                  <h4>Liquid</h4>  
-                </a>
-                </section>
-                
-                <section class= Arrowright>
-                    
-                  <a href="powder.html"  class="masthead__nav-link2">
-                  <img src="img/Arrowright.png" alt="Arrow Right" id="Arrowright" /> 
-                  <h4>Powder</h4> 
-                </a>
-                </section>
-            </div> -->
-
-    
-    
-</section>
 
 </aside>
 </div>
@@ -106,7 +87,6 @@
             //event listeners
             //when berry selection is clicked, execute funtion
             document.querySelector("#goldenberries").addEventListener("click" , choseGolden);
-            
             //when super green selection is clicked, execute funtion
             document.querySelector("#dragonfruit").addEventListener("click" , choseDragon);
             //when tropical selection is clicked, execute funtion

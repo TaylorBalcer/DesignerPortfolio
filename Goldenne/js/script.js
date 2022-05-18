@@ -223,3 +223,50 @@ if(!sessionStorage.powderName){
  }//end function updateCart
 
  
+/**
+ * this method changes the border color from green back to gold when hovering
+ * @param bcolor       the border color
+ */
+const changeBoxStyle = (bcolor) => {
+    document.querySelectorAll("img")[6].style.border = bcolor;
+
+}
+document.querySelectorAll("img")[4].addEventListener("mouseover", () => {
+    changeBoxStyle("solid 3px #080");
+});
+
+document.querySelectorAll("img")[4].addEventListener("mouseout", () => {
+    changeBoxStyle("solid 3px #fc0");
+});
+
+/**
+ * this method changes the border color from green back to gold when hovering
+ * @param bcolor       the border color
+ */
+ const changeBoxStyle1 = (bcolor) => {
+    document.querySelectorAll("img")[7].style.border = bcolor;
+}
+document.querySelectorAll("img")[2].addEventListener("mouseover", () => {
+    changeBoxStyle1("solid 3px #080");
+});
+
+document.querySelectorAll("img")[2].addEventListener("mouseout", () => {
+    changeBoxStyle1("solid 3px #fc0");
+});
+
+/**
+ * this method changes the border color from green back to gold when hovering
+ * @param bcolor       the border color
+ */
+ const changeBoxStyle2 = (bcolor) => {
+    document.querySelectorAll("img")[8].style.border = bcolor;
+}
+document.querySelectorAll("img")[3].addEventListener("mouseover", () => {
+    changeBoxStyle2("solid 3px #080");
+});
+
+document.querySelectorAll("img")[3].addEventListener("mouseout", () => {
+    changeBoxStyle2("solid 3px #fc0");
+});
+
+
