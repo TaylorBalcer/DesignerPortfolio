@@ -10,7 +10,40 @@
 <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Roboto+Flex:opsz,wght@8..144,300&family=Saira+Condensed:wght@300&family=Varela+Round&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <script src="https://kit.fontawesome.com/69a9e0c5d6.js" crossorigin="anonymous"></script>
-</head>
+    <style>
+      .flip-container {
+          margin: 50px;
+          perspective: 1000;
+          display: inline-block;
+      }
+      .flip-container:hover .card {
+          transform: rotateY(180deg);
+      }
+      .card, .front, .back {
+          width: 130px;
+          height: 195px;
+      }
+      .card {
+          transition: 0.5s;
+          transform-style: preserve-3d;
+          position: relative;
+      }
+      .front, .back {
+          backface-visibility: hidden;
+          position: absolute;
+      }
+      .front {
+          z-index: 1;
+          transform: rotateY(180deg);
+          background: url("images/card-front.jpg") no-repeat;
+      }
+      .back {
+          z-index: 2; /* back side, placed above front */
+          transform: rotateY(0deg);
+          background: url("images/card-back.jpg") no-repeat;
+      }
+  </style>
+  </head>
 
 <body>
     
@@ -47,11 +80,20 @@
                 
         </div>
            
+
+
+
+
+        
         <section class="option_set">
-           
-              <h3>Berry Blend</h3>   <!--
-                     <p> A fresh blend of strawberries,blueberries,raspberries, and squeezed lemon to go.</p> -->
+          <h3>Berry Blend</h3>  
                 <img src="img/berry-blend.jpg" alt="image" id="berryblend"/>
+             
+                <!-- <p> A fresh blend of strawberries,blueberries,raspberries, and squeezed lemon to go.</p> -->
+             
+             
+                     <!-- <p> A fresh blend of strawberries,blueberries,raspberries, and squeezed lemon to go.</p>
+                <img src="img/berry-blend.jpg" alt="image" id="berryblend"/> -->
               
                  <h3>Super Greens Blend</h3>  <!-- <p>All your favorite super greens, this mix counts as a healthy meal replacement! Lemon, ginger,spinach, kale packed into one./p> -->
                 <img src="img/super-greens-blend.jpg" alt="image" id="supergreensblend"/>

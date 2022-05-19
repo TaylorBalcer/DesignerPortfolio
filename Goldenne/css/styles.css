@@ -240,6 +240,7 @@ aside h2{
 
 h3 {
     padding-top: .5rem;
+    padding-bottom:.5rem;
 }
 
 h4 {
@@ -412,7 +413,7 @@ h2 {
 }
 
 .option_set h3{
-  padding-left:1rem;
+  padding-left:0;
 }
 
 .option_set img {
@@ -444,7 +445,9 @@ margin:.0;
 .option_set p {
   font-family: 'Saira Condensed', sans-serif;
     margin-left: .5rem;
-    font-size: 1.3rem;
+    font-size: 1rem;
+    padding-top:.5rem;
+    padding-bottom:.5rem;
 }
 
 
@@ -631,7 +634,6 @@ checkout styling */
 Width:100%;
 max-width:46%;
 margin:auto 0;
-padding-left:1rem;
 
 }
 
@@ -1511,6 +1513,7 @@ padding-left:1rem;
 .content i:link{
   color:#3a530f;
 }
+
 
 
 }
