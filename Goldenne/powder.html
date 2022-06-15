@@ -1,87 +1,133 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>Powder</title>
+    <title>Goldenne Fruit - Smoothie Builder - Powder</title>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Roboto+Flex:opsz,wght@8..144,300&family=Saira+Condensed:wght@300&family=Varela+Round&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Roboto+Flex:opsz,wght@8..144,300&family=Saira+Condensed:wght@300&family=Varela+Round&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <script src="https://kit.fontawesome.com/69a9e0c5d6.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header class="masthead">
-        
-        <h1 class="masthead__logo">  <a href="index.html"   class="nav-button" > <img src="img/goldenne_logo.svg" alt="Goldenne Fruit" id="logo"/> </a>
-            
-        
+
+        <h1 class="masthead__logo"> <a href="index.html" class="nav-button">  <span> Goldenne Fruit</span> <img src="img/goldenne_logo.svg"
+                    alt="Goldenne Fruit" id="logo" /> </a>
+
+
     </header>
     <nav id="main-navigation">
 
         <ul class="main-menu">
-          <!-- <li><a href="index.html"   class="nav-button" >Home</a></li> -->
-          <li><a href="flavor.html"   class="nav-button" >Flavor</a></li>
-          <li><a href="liquid.html"   class="nav-button" >Liquid</a></li>
-       
-          <li><a href="extra-fruit.html"   class="nav-button" >Extra</a></li>
-          <li><a href="powder.html"   class="nav-button" >Powder</a></li>
-          <li><a href="cart.html"   class="nav-button" ><i class="fa-solid fa-cart-shopping"></i></a></li>
+            <!-- <li><a href="index.html"   class="nav-button" >Home</a></li> -->
+            <li><a href="flavor.html" class="nav-button">Flavor</a></li>
+            <li><a href="liquid.html" class="nav-button">Liquid</a></li>
+
+            <li><a href="extra-fruit.html" class="nav-button">Extra</a></li>
+            <li><a href="powder.html" class="nav-button">Powder</a></li>
+            <li><a href="cart.html" class="nav-button"><i class="fa-solid fa-cart-shopping"></i></a></li>
         </ul>
-      </nav>
+    </nav>
 
-      
-    <h2>Customize your Powder</h2>
+
+    <h2 id="welcome"> </h2>
+    <script>
+      window.onload = function () {
+        document.getElementById('welcome').innerText = "Customize " + localStorage.getItem('userName') + "'s Smoothie Powder";
+      };
+    </script>
     <div class="flex-container">
-<main>
+        <main>
 
-   
-    <div id="comp-frame">
-        
-            <div id="comp-empty-layer"><img src="img/Empty-Jar.png" alt="Empty Jar" id="EmptyJar" /></div>
-            <div id="comp-flavor-layer"></div>
+
+            <div id="comp-frame">
+
+                <div id="comp-empty-layer"><img src="img/Empty-Jar.png" alt="Empty Jar" id="EmptyJar" /></div>
+                <div id="comp-flavor-layer"></div>
                 <div id="comp-liquid-layer"></div>
                 <div id="comp-extra-layer"></div>
                 <div id="comp-powder-layer"></div>
                 <div id="cart-total">Total: $0</div>
-        </div>
-      
-           
-        <section class="option_set">
-       
-                <h3>Turmeric</h3>
-                <img src="img/tumeric.jpg" alt="image" id="turmericpowder"/>
-                
-                <h3>Ginger</h3>
-                <img src="img/ginger.jpg" alt="image" id="ginger"/>
-                
-                <h3>Blue Spirulina</h3>
-                <img src="img/spirulina.jpg" alt="image" id="bluepowder"/>
-        
+            </div>
+
+
+            <section class="option_set">
+
+                <h3>Turmeric</h3><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        
+                         <img src="img/tumeric.jpg" alt="image" id="turmericpowder"/>
+                      </div>
+                      <div class="flip-card-back">
+                       
+                        <p>Tumeric Powder</p>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <img style="visibility:hidden"  src="img/tumeric.jpg" alt="image" id="turmericpowder" />
+
+                <h3>Ginger</h3> <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        
+                         <img  src="img/ginger.jpg" alt="image" id="ginger"/>
+                      </div>
+                      <div class="flip-card-back">
+                       
+                        <p>Ginger Powder</p>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <img style="visibility:hidden" src="img/ginger.jpg" alt="image" id="ginger" />
+
+                <h3>Blue Spirulina</h3><div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        
+                         <img src="img/spirulina.jpg" alt="image" id="bluepowder"/>
+                      </div>
+                      <div class="flip-card-back">
+                       
+                        <p>Blue Spirulina Powder</p>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <img style="visibility:hidden"src="img/spirulina.jpg" alt="image" id="bluepowder" />
+
             </section>
 
-        </main> 
-        
-        
+        </main>
+
+
         <aside class="cart">
             <section class="cart-box">
-            <h2 class= "flavor">CART</h2>
-            <p id="cart-flavor-name">No flavor chosen yet</p>
-            <p id="cart-flavor-price">$</p>
-            <p id="cart-liquid-name">No Liquid chosen yet</p>
-            <p id="cart-liquid-price">$</p>
-            <p id="cart-extra-name">No extra fruit chosen yet</p>
-            <p id="cart-extra-price">$</p>
-            <p id="cart-powder-name">No powder chosen yet</p>
-            <p id="cart-powder-price">$</p>
+                <h2 class="flavor">CART</h2>
+                <p id="cart-flavor-name">No flavor chosen yet</p>
+                <p id="cart-flavor-price">$</p>
+                <p id="cart-liquid-name">No Liquid chosen yet</p>
+                <p id="cart-liquid-price">$</p>
+                <p id="cart-extra-name">No extra fruit chosen yet</p>
+                <p id="cart-extra-price">$</p>
+                <p id="cart-powder-name">No powder chosen yet</p>
+                <p id="cart-powder-price">$</p>
             </section>
-        </div>
+    </div>
 
-        
-  
-        <!-- <div class="content">
+
+
+    <!-- <div class="content">
             <section class= Arrowleft>
                
               <a href="extrafruit.html"  class="masthead__nav-link2">
@@ -98,97 +144,103 @@
                 </section>
             </div> -->
 
-    
-    
-</section>
-
-</aside>
-</div>
 
 
+    </section>
 
-<footer> <div class="content">
-    <section class= Arrowleft>
-        
-      <a href="extra-fruit.html"  class="masthead__nav-link2">
-        
-        <i class="fa-solid fa-arrow-left-long">Extra</i>
-          </a>
-        </section>
-        
-        <section class= Arrowright>
-            
-          <a href="cart.html"  class="masthead__nav-link2">
-           
-            <i class="fa-solid fa-arrow-right-long">Cart</i>
-          </a>
-        </section>
-    </div> &copy; Taylor Balcer</footer>
+    </aside>
+    </div>
 
 
-<script src="js/script.js"></script>
 
-        <script>
-            //js code specfic to this page
-            updateCart();//populate the cart right away
-            //event listeners
-            //when berry selection is clicked, execute funtion
-            document.querySelector("#turmericpowder").addEventListener("click" , choseTurmeric);
-            
-            //when super green selection is clicked, execute funtion
-            document.querySelector("#ginger").addEventListener("click" , choseGinger);
-            //when tropical selection is clicked, execute funtion
-            document.querySelector("#bluepowder").addEventListener("click" , choseBlue);
-/**
- * this method changes the border color from green back to gold when hovering
- * @param bcolor       the border color
- */
- const changeBoxStyle7 = (bcolor) => {
-    document.querySelector("#turmericpowder").style.border = bcolor;
+    <footer>
+        <div class="content">
+            <section class=Arrowleft>
 
-}
-document.querySelector("#turmericpowder").addEventListener("mouseover", () => {
-    changeBoxStyle7("solid 3px #080");
+                <a href="extra-fruit.html" class="masthead__nav-link2">
+
+                    <i class="fa-solid fa-arrow-left-long">Extra</i>
+                </a>
+            </section>
+
+            <section class=Arrowright>
+
+                <a href="cart.html" class="masthead__nav-link2">
+
+                    <i class="fa-solid fa-arrow-right-long">Cart</i>
+                </a>
+            </section>
+        </div> &copy; Taylor Balcer
+    </footer>
+
+
+    <script src="js/script.js"></script>
+
+    <script>
+        //js code specfic to this page
+        updateCart();//populate the cart right away
+        //event listeners
+        //when berry selection is clicked, execute funtion
+        document.querySelector("#turmericpowder").addEventListener("click", choseTurmeric);
+
+        //when super green selection is clicked, execute funtion
+        document.querySelector("#ginger").addEventListener("click", choseGinger);
+        //when tropical selection is clicked, execute funtion
+        document.querySelector("#bluepowder").addEventListener("click", choseBlue);
+        /**
+         * this method changes the border color from green back to gold when hovering
+         * @param bcolor       the border color
+         */
+        const changeBoxStyle7 = (bcolor) => {
+            document.querySelector("#turmericpowder").style.border = bcolor;
+
+        }
+        document.querySelector("#turmericpowder").addEventListener("mouseover", () => {
+            changeBoxStyle7("solid 3px #080");
+        });
+
+        document.querySelector("#turmericpowder").addEventListener("mouseout", () => {
+            changeBoxStyle7("solid 3px #fc0");
+        });
+
+        /**
+         * this method changes the border color from green back to gold when hovering
+         * @param bcolor       the border color
+         */
+        const changeBoxStyle8 = (bcolor) => {
+            document.querySelector("#ginger").style.border = bcolor;
+
+        }
+        document.querySelector("#ginger").addEventListener("mouseover", () => {
+            changeBoxStyle8("solid 3px #080");
+        });
+
+        document.querySelector("#ginger").addEventListener("mouseout", () => {
+            changeBoxStyle8("solid 3px #fc0");
+        });
+
+        /**
+         * this method changes the border color from green back to gold when hovering
+         * @param bcolor       the border color
+         */
+        const changeBoxStyle9 = (bcolor) => {
+            document.querySelector("#bluepowder").style.border = bcolor;
+
+        }
+        document.querySelector("#bluepowder").addEventListener("mouseover", () => {
+            changeBoxStyle9("solid 3px #080");
+        });
+
+        document.querySelector("#bluepowder").addEventListener("mouseout", () => {
+            changeBoxStyle9("solid 3px #fc0");
+        });
+
+        $('.flip-card').click(function() {
+  $(this).find('.flip-card-inner').toggleClass('flipped')
 });
 
-document.querySelector("#turmericpowder").addEventListener("mouseout", () => {
-    changeBoxStyle7("solid 3px #fc0");
-});
 
-/**
- * this method changes the border color from green back to gold when hovering
- * @param bcolor       the border color
- */
- const changeBoxStyle8 = (bcolor) => {
-    document.querySelector("#ginger").style.border = bcolor;
+    </script>
+</body>
 
-}
-document.querySelector("#ginger").addEventListener("mouseover", () => {
-    changeBoxStyle8("solid 3px #080");
-});
-
-document.querySelector("#ginger").addEventListener("mouseout", () => {
-    changeBoxStyle8("solid 3px #fc0");
-});
-
-/**
- * this method changes the border color from green back to gold when hovering
- * @param bcolor       the border color
- */
- const changeBoxStyle9 = (bcolor) => {
-    document.querySelector("#bluepowder").style.border = bcolor;
-
-}
-document.querySelector("#bluepowder").addEventListener("mouseover", () => {
-    changeBoxStyle9("solid 3px #080");
-});
-
-document.querySelector("#bluepowder").addEventListener("mouseout", () => {
-    changeBoxStyle9("solid 3px #fc0");
-});
-
-
-           
-        </script>
-    </body>
 </html>

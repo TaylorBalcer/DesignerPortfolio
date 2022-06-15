@@ -1,225 +1,292 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>Flavor</title>
+    <title>Goldenne Fruit - Smoothie Builder - Flavor</title>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Roboto+Flex:opsz,wght@8..144,300&family=Saira+Condensed:wght@300&family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Roboto+Flex:opsz,wght@8..144,300&family=Saira+Condensed:wght@300&family=Varela+Round&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <script src="https://kit.fontawesome.com/69a9e0c5d6.js" crossorigin="anonymous"></script>
     <style>
-      .flip-container {
-          margin: 50px;
-          perspective: 1000;
-          display: inline-block;
-      }
-      .flip-container:hover .card {
-          transform: rotateY(180deg);
-      }
-      .card, .front, .back {
-          width: 130px;
-          height: 195px;
-      }
-      .card {
-          transition: 0.5s;
-          transform-style: preserve-3d;
-          position: relative;
-      }
-      .front, .back {
-          backface-visibility: hidden;
-          position: absolute;
-      }
-      .front {
-          z-index: 1;
-          transform: rotateY(180deg);
-          background: url("images/card-front.jpg") no-repeat;
-      }
-      .back {
-          z-index: 2; /* back side, placed above front */
-          transform: rotateY(0deg);
-          background: url("images/card-back.jpg") no-repeat;
-      }
-  </style>
-  </head>
+        .flip-container {
+            margin: 50px;
+            perspective: 1000;
+            display: inline-block;
+        }
+
+        .flip-container:hover .card {
+            transform: rotateY(180deg);
+        }
+
+        .card,
+        .front,
+        .back {
+            width: 130px;
+            height: 195px;
+        }
+
+        .card {
+            transition: 0.5s;
+            transform-style: preserve-3d;
+            position: relative;
+        }
+
+        .front,
+        .back {
+            backface-visibility: hidden;
+            position: absolute;
+        }
+
+        .front {
+            z-index: 1;
+            transform: rotateY(180deg);
+            background: url("images/card-front.jpg") no-repeat;
+        }
+
+        .back {
+            z-index: 2;
+            /* back side, placed above front */
+            transform: rotateY(0deg);
+            background: url("images/card-back.jpg") no-repeat;
+        }
+    </style>
+</head>
 
 <body>
-    
+
     <header class="masthead">
-        
-     
-      <h1 class="masthead__logo">  <a href="index.html"   class="nav-button" > <img src="img/goldenne_logo.svg" alt="Goldenne Fruit" id="logo"/> </a>
-        
+
+
+        <h1 class="masthead__logo"> <a href="index.html" class="nav-button">  <span> Goldenne Fruit</span> <img src="img/goldenne_logo.svg"
+                    alt="Goldenne Fruit" id="logo" /> </a>
+
     </header>
     <nav id="main-navigation">
 
-      <ul class="main-menu">
-        <!-- <li><a href="index.html"   class="nav-button" >Home</a></li> -->
-        <li><a href="flavor.html"   class="nav-button" >Flavor</a></li>
-        <li><a href="liquid.html"   class="nav-button" >Liquid</a></li>
-     
-        <li><a href="extra-fruit.html"   class="nav-button" >Extra</a></li>
-        <li><a href="powder.html"   class="nav-button" >Powder</a></li>
-        <li><a href="cart.html"   class="nav-button" ><i class="fa-solid fa-cart-shopping"></i></a></li>
-      </ul>
-    </nav>
-    <h2>Customize your Flavor  </h2>
-    <div class="flex-container">
-<main>
+        <ul class="main-menu">
+            <!-- <li><a href="index.html"   class="nav-button" >Home</a></li> -->
+            <li><a href="flavor.html" class="nav-button">Flavor</a></li>
+            <li><a href="liquid.html" class="nav-button">Liquid</a></li>
 
-   
-    <div id="comp-frame">
-            <div id="comp-empty-layer"><img src="img/Empty-Jar.png" alt="Empty Jar" id="EmptyJar" /></div>
+            <li><a href="extra-fruit.html" class="nav-button">Extra</a></li>
+            <li><a href="powder.html" class="nav-button">Powder</a></li>
+            <li><a href="cart.html" class="nav-button"><i class="fa-solid fa-cart-shopping"></i></a></li>
+        </ul>
+    </nav>
+    <h2 id="welcome"> </h2>
+    <script>
+      window.onload = function () {
+        document.getElementById('welcome').innerText = "Customize " + localStorage.getItem('userName') + "'s Smoothie Flavor";
+      };
+    </script>
+    <div class="flex-container">
+        <main>
+
+
+            <div id="comp-frame">
+                <div id="comp-empty-layer"><img src="img/Empty-Jar.png" alt="Empty Jar" id="EmptyJar" /></div>
                 <div id="comp-flavor-layer"></div>
                 <div id="comp-liquid-layer"></div>
                 <div id="comp-extra-layer"></div>
                 <div id="comp-powder-layer"></div>
                 <div id="cart-total">Total: $0</div>
+
+            </div>
+
+
+
+
+
+
+            <section class="option_set">
+
                 
-        </div>
-           
+                <h3>Berry Blend $2.99</h3> <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                       
+                        <img src="img/berry-blend.jpg" alt="image" id="berryblend" />
+                      </div>
+                      <div class="flip-card-back">
+                       
+                        <p> A fresh blend of strawberries, blueberries, raspberries, and squeezed lemon to go.</p>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <img style="visibility:hidden" src="img/berry-blend.jpg" alt="image" id="berryblend" />
+               
 
-
-
-
-        
-        <section class="option_set">
-          <h3>Berry Blend</h3>  
-                <img src="img/berry-blend.jpg" alt="image" id="berryblend"/>
-             
-                <!-- <p> A fresh blend of strawberries,blueberries,raspberries, and squeezed lemon to go.</p> -->
-             
-             
-                     <!-- <p> A fresh blend of strawberries,blueberries,raspberries, and squeezed lemon to go.</p>
+                <!-- <p> A fresh blend of strawberries,blueberries,raspberries, and squeezed lemon to go.</p>
                 <img src="img/berry-blend.jpg" alt="image" id="berryblend"/> -->
-              
-                 <h3>Super Greens Blend</h3>  <!-- <p>All your favorite super greens, this mix counts as a healthy meal replacement! Lemon, ginger,spinach, kale packed into one./p> -->
-                <img src="img/super-greens-blend.jpg" alt="image" id="supergreensblend"/>
+                <!-- <img src="img/berry-blend.jpg" alt="image" id="berryblend" /> -->
+                <h3>Super Greens Blend $3.99</h3>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        
+                        <img src="img/super-greens-blend.jpg" alt="image" id="supergreensblend" />
+                      </div>
+                      <div class="flip-card-back">
+                       
+                        <p>All your favorite super greens, this mix counts as a healthy meal replacement! Lemon, ginger,spinach, kale packed into one.</p>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <img style="visibility:hidden" src="img/super-greens-blend.jpg" alt="image" id="supergreensblend" />
+                  
+               
                 
-                <h3>Tropical Blend</h3> <!--  <p>We are known for our unique blend of fruits. This smoothie includes pineapples, watermelon, kiwi, starfruit, grape, and yellow cherries</p> -->
-                <img src="img/tropical-blend.jpg" alt="image" id="tropicalblend"/>
-                
-              
+
+                  <h3>Tropical Blend $2.99</h3>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        
+                        <img src="img/tropical-blend.jpg" alt="image" id="tropicalblend" />
+                      </div>
+                      <div class="flip-card-back">
+                       
+                        <p>We are known for our unique blend of fruits. This smoothie includes pineapples, watermelon, kiwi, starfruit, grape, and yellow cherries</p>
+                      </div>
+                    </div>
+                    <img style="visibility:hidden" src="img/super-greens-blend.jpg" alt="image" id="supergreensblend" />
+                  </div>
+               
+                 
+
+
 
             </section>
 
-        
-        </main> 
-   
+
+        </main>
+
         <aside class="cart">
             <section class="cart-box">
-            <h2 class= "flavor">CART</h2>
-            <p id="cart-flavor-name">No flavor chosen yet</p>
-            <p id="cart-flavor-price">$</p>
-            <p id="cart-liquid-name">No Liquid chosen yet</p>
-            <p id="cart-liquid-price">$</p>
-            <p id="cart-extra-name">No extra fruit chosen yet</p>
-            <p id="cart-extra-price">$</p>
-            <p id="cart-powder-name">No powder chosen yet</p>
-            <p id="cart-powder-price">$</p>
+                <h2 class="flavor">CART</h2>
+                <p id="cart-flavor-name">No flavor chosen yet</p>
+                <p id="cart-flavor-price">$</p>
+                <p id="cart-liquid-name">No Liquid chosen yet</p>
+                <p id="cart-liquid-price">$</p>
+                <p id="cart-extra-name">No extra fruit chosen yet</p>
+                <p id="cart-extra-price">$</p>
+                <p id="cart-powder-name">No powder chosen yet</p>
+                <p id="cart-powder-price">$</p>
             </section>
-     
+
+    </div>
+    </aside>
+
+
+
+
+
+
+
+    <footer>
+
+
+
         </div>
-      </aside>
-        
-       
-        
+        <div class="content">
+            <section class=Arrowleft>
 
+                <a href="index.html" class="masthead__nav-link2">
 
-
-
-<footer>  
-
-        
-       
-      </div> <div class="content">
-        <section class= Arrowleft>
-            
-          <a href="index.html"  class="masthead__nav-link2">
-            
-            <i class="fa-solid fa-arrow-left-long">Home</i>
-              </a>
+                    <i class="fa-solid fa-arrow-left-long">Home</i>
+                </a>
             </section>
-            
-            <section class= Arrowright>
-                
-              <a href="liquid.html"  class="masthead__nav-link2">
-               
-                <i class="fa-solid fa-arrow-right-long">Liquid</i>
-              </a>
+
+            <section class=Arrowright>
+
+                <a href="liquid.html" class="masthead__nav-link2">
+
+                    <i class="fa-solid fa-arrow-right-long">Liquid</i>
+                </a>
             </section>
         </div>
-        &copy; Taylor Balcer</footer>
+        &copy; Taylor Balcer
+    </footer>
 
 
-<script src="js/script.js"></script>
+    <script src="js/script.js"></script>
 
-        <script>
-            //js code specfic to this page
-            updateCart();//populate the cart right away
-            //event listeners
-            //when berry selection is clicked, execute funtion
-            document.querySelector("#berryblend").addEventListener("click" , choseBerry);
+    <script>
+        //js code specfic to this page
+        updateCart();//populate the cart right away
+        //event listeners
+        //when berry selection is clicked, execute funtion
+        document.querySelector("#berryblend").addEventListener("click", choseBerry);
 
-            //when super green selection is clicked, execute funtion
-            document.querySelector("#supergreensblend").addEventListener("click" , choseSuperGreens);
-            //when tropical selection is clicked, execute funtion
-            document.querySelector("#tropicalblend").addEventListener("click" , choseTropical);
+        //when super green selection is clicked, execute funtion
+        document.querySelector("#supergreensblend").addEventListener("click", choseSuperGreens);
+        //when tropical selection is clicked, execute funtion
+        document.querySelector("#tropicalblend").addEventListener("click", choseTropical);
 
-/**
- * this method changes the border color from green back to gold when hovering
- * @param bcolor       the border color
- */
- const changeBoxStyle = (bcolor) => {
-    document.querySelector("#berryblend").style.border = bcolor;
+        /**
+         * this method changes the border color from green back to gold when hovering
+         * @param bcolor       the border color
+         */
+        const changeBoxStyle = (bcolor) => {
+            document.querySelector("#berryblend").style.border = bcolor;
 
-}
-document.querySelector("#berryblend").addEventListener("mouseover", () => {
-    changeBoxStyle("solid 3px #080");
+        }
+        document.querySelector("#berryblend").addEventListener("mouseover", () => {
+            changeBoxStyle("solid 3px #080");
+        });
+
+        document.querySelector("#berryblend").addEventListener("mouseout", () => {
+            changeBoxStyle("solid 3px #fc0");
+        });
+
+        /**
+         * this method changes the border color from green back to gold when hovering
+         * @param bcolor       the border color
+         */
+        const changeBoxStyle1 = (bcolor) => {
+            document.querySelector("#supergreensblend").style.border = bcolor;
+
+        }
+        document.querySelector("#supergreensblend").addEventListener("mouseover", () => {
+            changeBoxStyle1("solid 3px #080");
+        });
+
+        document.querySelector("#supergreensblend").addEventListener("mouseout", () => {
+            changeBoxStyle1("solid 3px #fc0");
+        });
+
+        /**
+         * this method changes the border color from green back to gold when hovering
+         * @param bcolor       the border color
+         */
+        const changeBoxStyle3 = (bcolor) => {
+            document.querySelector("#tropicalblend").style.border = bcolor;
+
+        }
+        document.querySelector("#tropicalblend").addEventListener("mouseover", () => {
+            changeBoxStyle3("solid 3px #080");
+        });
+
+        document.querySelector("#tropicalblend").addEventListener("mouseout", () => {
+            changeBoxStyle3("solid 3px #fc0");
+        });
+      
+       
+        $('.flip-card').click(function() {
+  $(this).find('.flip-card-inner').toggleClass('flipped')
 });
 
-document.querySelector("#berryblend").addEventListener("mouseout", () => {
-    changeBoxStyle("solid 3px #fc0");
-});
 
-/**
- * this method changes the border color from green back to gold when hovering
- * @param bcolor       the border color
- */
- const changeBoxStyle1 = (bcolor) => {
-    document.querySelector("#supergreensblend").style.border = bcolor;
+    </script>
+</body>
 
-}
-document.querySelector("#supergreensblend").addEventListener("mouseover", () => {
-    changeBoxStyle1("solid 3px #080");
-});
-
-document.querySelector("#supergreensblend").addEventListener("mouseout", () => {
-    changeBoxStyle1("solid 3px #fc0");
-});
-
-/**
- * this method changes the border color from green back to gold when hovering
- * @param bcolor       the border color
- */
- const changeBoxStyle3 = (bcolor) => {
-    document.querySelector("#tropicalblend").style.border = bcolor;
-
-}
-document.querySelector("#tropicalblend").addEventListener("mouseover", () => {
-    changeBoxStyle3("solid 3px #080");
-});
-
-document.querySelector("#tropicalblend").addEventListener("mouseout", () => {
-    changeBoxStyle3("solid 3px #fc0");
-});
-
-
-
-
-           
-        </script>
-    </body>
 </html>
