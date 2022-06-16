@@ -20,8 +20,8 @@
   <header class="masthead">
 
     <h1 class="masthead__logo"><a href="index.html" class="nav-button">  <span> Goldenne Fruit</span><img src="img/goldenne_logo.svg"
-          alt="Goldenne Fruit" id="logo" /></h1></a>
-
+          alt="Goldenne Fruit" id="logo" /></a>
+    </h1>
   </header>
   <nav id="main-navigation">
 
@@ -39,26 +39,28 @@
   <h2 id="welcome"> </h2>
   <script>
     window.onload = function () {
-      document.getElementById('welcome').innerText = localStorage.getItem('userName') + "'s Goldenne Fruit Smoothie";
+      document.getElementById('welcome').innerText ="Pick up "+ localStorage.getItem('userName') + "'s Goldenne Fruit Smoothie";
     };
   </script>
-  <h2>
+  <!-- <h2>
     <div id="cart-total">Total: $0</div>
-  </h2>
+  </h2> -->
   <main>
+    
+      <div style="width: 100%"><iframe width="100%" height="254" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=254&amp;hl=en&amp;q=40.46779651791276,%20-80.00718355178834+(Goldenne%20Fruit%20Smoothies)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/wearable-gps/">wearable gps</a></iframe></div>
 
-
-    <form class="checkout">
-      <div class="checkout-header">
-        <h1 class="checkout-title">
-          Pickup
-          <div id="comp-empty-layer">
+    <!-- <form  class="checkout">
+      <div class="checkout-header"> -->
+        
+          <!-- <div id="comp-empty-layer">
             <span class="checkout-price">$10</span>
 
         </h1>
-      </div>
-<p style="text-align:center; line-height:2rem; padding:1.5rem;">Please pickup your Goldenne fruit smoothie at 1519 Smoothie Ave. Pittsburgh, PA 15099</p>
-      <!-- <p>
+      </div> -->
+      
+<p style="text-align:center; line-height:2rem; padding:1.5rem; font-size:1rem; font-weight:bold; text-transform:uppercase;"> Please pickup your Goldenne fruit smoothie at 1519 Smoothie Ave. Pittsburgh, PA 15099</p>
+     
+<!-- <p>
 
         <input type="text" class="checkout-input checkout-name" placeholder="Name on Card" autofocus>
       <p>
@@ -74,26 +76,14 @@
 
         <input type="submit" onclick="submitForm()" value="Purchase" class="checkout-btn"> <a href="comfirm.html"></a>
       </p> -->
-    </form>
-
-
-
-
-
-
-
-
-    </div>
-
-
-    </aside>
-
-    <script src="js/script.js"></script>
+   
+<!-- 
+    <script src="js/script.js"></script> -->
 
 
 
   </main>
-
+<!-- 
   <div id="comp-frame2">
     <div id="comp-empty-layer"><img src="img/Empty-Jar.png" alt="Empty Jar" id="EmptyJar" /></div>
     <div id="comp-flavor-layer"></div>
@@ -113,26 +103,24 @@
     <p id="cart-extra-price">$</p>
     <p id="cart-powder-name">No powder chosen yet</p>
     <p id="cart-powder-price">$</p>
-  </section>
+  </section> -->
 
   <footer>&copy; Taylor Balcer</footer>
-  <script src="js/script.js"></script>
+  <!-- <script src="js/script.js"></script>
 
 
   <script>
     //js code specfic to this page
-    updateCart();//populate the cart right away
+    // updateCart();//populate the cart right away
     //event listeners
     //when water selection is clicked, execute funtion
-    function submitForm() {
-      alert("Thank you for choosing Goldenne Fruit. Your order has been placed. Pressing the OK button will take you to the Goldenne Fruit homepage.");
-      window.open("pickup.html");
-    }
-  </script>
+    // function submitForm() {
+    //   alert("Thank you for choosing Goldenne Fruit. Your order has been placed. Pressing the OK button will take you to the Goldenne Fruit homepage.");
+    //   window.open("pickup.html");
+    // }
+  </script> -->
 
-</body>
 
-</html>
 
 </body>
 

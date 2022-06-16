@@ -19,8 +19,8 @@
     <header class="masthead">
 
         <h1 class="masthead__logo"><a href="index.html" class="nav-button"> <span> Goldenne Fruit</span> <img src="img/goldenne_logo.svg"
-                    alt="Goldenne Fruit" id="logo" /></h1></a>
-
+                    alt="Goldenne Fruit" id="logo" /></a>
+        </h1>
     </header>
     <nav id="main-navigation">
 
@@ -37,7 +37,7 @@
     <h2 id="welcome"> </h2>
     <script>
         window.onload = function () {
-            document.getElementById('welcome').innerText = localStorage.getItem('userName') + "'s Goldenne Fruit Smoothie";
+            document.getElementById('welcome').innerText = "Review " + localStorage.getItem('userName') + "'s Order";
         };
     </script>
     <div class="flex-container">
@@ -56,7 +56,7 @@
             </div>
 
 
-            <img class="smaller" src="img/smoothie-blend.gif">
+            <img style="background-color:#fdf4d5" alt="smoothie blending" class="smaller" src="img/smoothie-blend.gif">
 
 
 
@@ -80,24 +80,22 @@
             </section>
 
             <a href="check-out.html">
-                <button type="submit" class="place_order glow-button2">Check Out</button></a>
-
+                <button type="submit" class="place_order glow-button2"> Check Out</button></a>
+        </aside>
     </div>
 
-    </aside>
-    </div>
-
+  
 
 
     <footer>
         <div class="content">
-            <section class=Arrowleft>
+          
 
-                <a href="powder.html" class="masthead__nav-link2">
+                <!-- <a href="powder.html" class="masthead__nav-link2">
 
                     <i class="fa-solid fa-arrow-left-long">Back</i>
-                </a>
-            </section>
+                </a> -->
+           
         </div> &copy; Taylor Balcer
     </footer>
 
@@ -109,15 +107,15 @@
         updateCart();//populate the cart right away
         //event listeners
         //when berry selection is clicked, execute funtion
-        document.querySelector("#goldenberries").addEventListener("click", choseGolden);
-        //when super green selection is clicked, execute funtion
-        document.querySelector("#dragonfruit").addEventListener("click", choseDragon);
-        //when tropical selection is clicked, execute funtion
-        document.querySelector("#banana").addEventListener("click", choseBanana);
+        // document.querySelector("#goldenberries").addEventListener("click", choseGolden);
+        // //when super green selection is clicked, execute funtion
+        // document.querySelector("#dragonfruit").addEventListener("click", choseDragon);
+        // //when tropical selection is clicked, execute funtion
+        // document.querySelector("#banana").addEventListener("click", choseBanana);
 
-        window.onload = function () {
-            document.getElementById('welcome').innerText = "Hello, " + sessionStorage.getItem('userName');
-        };
+        // window.onload = function () {
+        //     document.getElementById('welcome').innerText = "Hello, " + localStorage.getItem('userName');
+        // };
 
     </script>
 </body>
