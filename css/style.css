@@ -31,7 +31,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1.25;
 	margin: 0 auto 0 auto;
-	max-width: 1200px;
+	/* max-width: 1200px; */
 }
 ol, ul {
 	list-style: none;
@@ -112,6 +112,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 		padding-bottom: 2rem;
 		animation: h2-an 10s linear forwards;
 		padding-top:2rem;
+		padding-left:1rem;
 		
 	}
 	@keyframes h2-an{
@@ -269,7 +270,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	}
 	footer{
 		background-color: #e78f08;
-		margin: 0 2rem 0 2rem;
+		/* margin: 0 2rem 0 2rem; */
 		
 	} 
 	
@@ -295,8 +296,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	
 	aside{
 		background-color:black;
-		padding: 1rem 2rem 1rem 2rem;
-		margin: 1rem 2rem 0 2rem;
+		/* padding: 1rem 2rem 1rem 2rem;
+		margin: 1rem 2rem 0 2rem; */
 	}
 
 	a{
@@ -337,7 +338,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	
 	.container-contact{
 		display: grid;
-		grid-template-areas: "h4 img" "soc soc";
+		grid-template-areas: "art img" "soc soc";
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: auto auto;
 		padding: .2rem;
@@ -346,8 +347,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 		
 	}
 
-	h4{
-		grid-area: h4;
+	article{
+		grid-area: art;
 		
 	}
 	p{
@@ -359,7 +360,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	
 	.my-pic{
 		transition: transform 1s ease .1s;
-		
+		padding-bottom:1rem;
 		width:100%;
 		margin-bottom:1rem;
 		margin-top:1rem;
@@ -399,14 +400,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 		grid-gap: .5rem;
 		grid-area: marquee;
 		padding-top: 2rem;
+		padding-right:1rem;
 
 	}
-
+	.marquee__gallery img{
+		width:100%;;
 	
+	}	
 	.my-pic4{
 		transition: transform 1s ease .1s;
 		padding-left:1rem;
 		width:100%;
+		padding:1rem;
 		padding-bottom:1rem;
 		height: 150px; width: auto;
 	}
@@ -617,6 +622,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 
 	/* styling for smaller screen */
 	@media screen and (min-width: 480px){
+		
 			html{
 			font-size:66%;
 			line-height:1.5rem;
@@ -631,7 +637,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 			}
 			.container-info{
 				display: grid;
-				grid-template-areas: "h4 img" "p p";
+				grid-template-areas: "art img" "p p";
 				grid-template-columns: 1fr 1fr;
 				grid-template-rows: auto auto;
 				padding: .2rem;
@@ -678,7 +684,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	}
 	.container-info{
 		display: grid;
-		grid-template-areas: "h4 img" "p p";
+		grid-template-areas: "art img" "p p";
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: auto auto;
 		padding: .2rem;
@@ -692,14 +698,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 
 @media screen and (min-width: 1200px){
 	footer{
-		margin: 0 2rem 0 2rem;
+		/* margin: 0 2rem 0 2rem; */
 	}
 	.masthead{
 		margin: 0 2rem 0 2rem;
 	}
 	.container-info{
 		display: grid;
-		grid-template-areas: "h4 img" "p p";
+		grid-template-areas: "art img" "p p";
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: auto auto;
 		padding: .2rem;
@@ -708,4 +714,79 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 		
 		
 	}
+
 }
+
+
+.main-head {
+	grid-area: header;
+		/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#111010+74,ccc5ff+91,ffffff+100 */
+		background: #111010; /* Old browsers */
+		background: -moz-linear-gradient(top,  #111010 74%, #ccc5ff 91%, #ffffff 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top,  #111010 74%,#ccc5ff 91%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom,  #111010 74%,#ccc5ff 91%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#111010', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+	
+	
+			padding: 1rem 2rem 1rem 2rem;
+  }
+  .content {
+	  padding:1rem;
+	grid-area: content;
+  }
+  /* .main-nav {
+	grid-area: nav;
+  } */
+  .side {
+	grid-area: sidebar;
+  }
+  
+  .main-footer {
+	grid-area: footer;
+  }
+
+  .wrapper {
+	
+	/* gap: 20px; */
+	grid-template-areas:
+	  "header"
+	  
+	  "content"
+	  "sidebar"
+	  
+	  "footer";
+  }
+
+  @media (min-width: 500px) {
+	.wrapper {
+		
+	  grid-template-columns: 2fr;
+	  grid-template-areas:
+	  
+		"header"
+		/* "nav     nav" */
+		"sidebar"
+		"sidebar "
+		"footer  ";
+	}
+	nav ul {
+	  /* display: flex; */
+	  justify-content: space-between;
+	}
+  }
+
+  @media (min-width: 700px) {
+	.wrapper {
+		display: grid;
+	  grid-template-columns: 2fr 8fr ;
+	  grid-template-areas:
+	  
+		"header header "
+		"sidebar   content "
+		"sidebar    content"
+		"footer footer "
+	 }
+	 nav ul {
+	   flex-direction: column;
+	 }
+  }
