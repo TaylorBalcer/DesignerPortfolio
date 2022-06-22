@@ -216,6 +216,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 		grid-area: navl;
 			margin-top:4rem;
 			margin-bottom:4rem;
+			
 			display: block;  
 			text-align: center;
 			text-decoration: none;
@@ -652,13 +653,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 		margin-left: auto;
 		margin-right: auto;
 		width: 60%;
-		padding:1rem;
+		/* padding:1rem; */
 		
 		
 	}
 		
-
 		}
+
+		
 
 
 
@@ -739,6 +741,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
   } */
   .side {
 	grid-area: sidebar;
+	padding:1rem;
   }
   
   .main-footer {
@@ -746,7 +749,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
   }
 
   .wrapper {
-	
+	margin: auto 0;
+	padding:0;
 	/* gap: 20px; */
 	grid-template-areas:
 	  "header"

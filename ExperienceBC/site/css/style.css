@@ -301,7 +301,7 @@ p {
     font-size: .9em;
     margin-bottom: .5rem;
     font-family: 'Jura', sans-serif;
-	padding:1rem;
+	/* padding:1rem; */
 }
 .normal{
 	font-size: 1em;
@@ -356,11 +356,17 @@ body {
 	border-top-left-radius:100px 90px; */
 header {
     background-image: url(../img/TantalusHut.gif);
-    padding-bottom: 6rem;
+    padding-bottom: 13rem;
     background-size: cover;
 }
 
-
+.fab{
+    font-size:2rem;
+    color:goldenrod;
+    padding:1rem;
+    
+    
+}
 footer {
     padding: .5rem;
     background: white;
@@ -370,11 +376,16 @@ footer {
 
 
 aside {
-    padding: .5rem;
+    padding: .6rem;
     background-color: #2f4038;
     color: #cdc;
-    font-size: .8rem;
+    font-size: .5rem;
+   
 
+}
+
+aside img{
+    padding-left:.8rem;
 }
 
 main {
@@ -515,12 +526,12 @@ a:active {
     animation: train-anim 10s ease-in-out 1s forwards;
     padding-bottom: 1rem;
 }
-.small{
+/* .small{
 	float:right;
 	width:10%;
 	margin-top:20px;
 	margin-right:60px;
-}
+} */
 .big{
 	width:60%;
 	padding:1rem;
@@ -730,6 +741,10 @@ h1 {
   .column {
 	float: left;
   }
+
+  .column p{
+      padding:1rem;
+  }
   
 
   @media screen and (max-width: 600px) {
@@ -808,8 +823,8 @@ hr {
 
 /* Set a style for all buttons */
 .signupbtn {
-    background-color: #2c582a;
-    color: white;
+    background-color: #2c582a53;
+    color: black;
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
@@ -824,7 +839,7 @@ button:hover {
 
 /* Extra styles for the cancel button */
 .cancelbtn {
-    color: white;
+    color: black;
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
@@ -832,7 +847,7 @@ button:hover {
     width: 100%;
     opacity: 0.9;
     padding: 14px 20px;
-    background-color: #3b2f4a;
+    background-color: #3b2f4a56;
 }
 
 /* Float cancel and signup buttons and add an equal width */
@@ -906,14 +921,35 @@ h1{
 }
 .head {
     position: absolute;
-    top: 16%;
+    top: 30%;
     left: 10%;
     transform: translate(-50%, -50%);
 
 }
 
 }
+/* 
+@media screen and (min-width:900px) {
+    .head {
+        position: absolute;
+        top: 20%;
+        left: 22%;
+        transform: translate(-50%, -50%);
+    
+    }
 
+} */
+
+@media screen and (min-width:1500px) {
+    .head {
+        position: absolute;
+        top: 20%;
+        left: 22%;
+        transform: translate(-50%, -50%);
+    
+    }
+
+}
 
 
 /* audio styling */
