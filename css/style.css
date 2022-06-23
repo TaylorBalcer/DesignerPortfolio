@@ -322,7 +322,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
-		width: 60%;
+		/* width: 60%; */
 		
 		
 	}
@@ -652,7 +652,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
-		width: 60%;
+		width:100%;
+		/* width: 60%; */
 		/* padding:1rem; */
 		
 		
@@ -741,9 +742,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	/* margin-right:1rem; */
     border: 0.25rem solid #ccc5ff;
     background-color: white;
+	
   }
 
- 
+
     
   /* .main-nav {
 	grid-area: nav;
