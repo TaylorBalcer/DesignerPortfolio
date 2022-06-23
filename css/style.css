@@ -223,7 +223,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 			border: 1px black solid;
 			font-family: 'Michroma', sans-serif;
 			color:#ccc5ff;
-			font-size: 1rem;
+			font-size: 1.4rem;
 	}
 	.nav-button:hover{
 	background-color:#773ace;
@@ -238,13 +238,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 		
 	}
 	a:hover:not(.nav__link){
-		color: black;
+		color: #552c96;
 	}
 	a:focus:not(.nav__link){
 		color: #999;
 	}
 	a:active:not(.nav__link){
-		color: #000;
+		color: orange;
 	}
 	.pagetitle{
 		grid-area: title;
@@ -457,12 +457,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 
 .contact_text{
 	color:white;
-	font-size:.9rem;
+	font-size:1.4rem;
 	text-align:center;
 }
 
 .small_{
-	font-size:.9rem;
+	font-size:1.4rem;
 }
 .aside_email{
 	font-size:1rem;
@@ -728,14 +728,23 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 		background: -webkit-linear-gradient(top,  #111010 74%,#ccc5ff 91%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
 		background: linear-gradient(to bottom,  #111010 74%,#ccc5ff 91%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#111010', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
-	margin-bottom:4rem;
+	/* margin-bottom:4rem; */
 	
 			padding: 1rem 2rem 1rem 2rem;
   }
   .content {
 	  padding:1rem;
 	grid-area: content;
+	padding: 1rem 2rem 1rem 2rem;
+	margin-left:1rem;
+	margin-bottom:1rem;
+	/* margin-right:1rem; */
+    border: 0.25rem solid #ccc5ff;
+    background-color: white;
   }
+
+ 
+    
   /* .main-nav {
 	grid-area: nav;
   } */
