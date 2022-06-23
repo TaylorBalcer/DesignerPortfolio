@@ -736,8 +736,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	  padding:1rem;
 	grid-area: content;
 	padding: 1rem 2rem 1rem 2rem;
-	margin-left:1rem;
-	margin-bottom:1rem;
+	/* margin-left:1rem;
+	margin-bottom:1rem; */
 	/* margin-right:1rem; */
     border: 0.25rem solid #ccc5ff;
     background-color: white;
