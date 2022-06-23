@@ -313,7 +313,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	}
 
 	.logo{
-		width:80%;
+		width:100%;
 		display:block;
 		grid-area: log;
 	}
@@ -322,7 +322,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
-		/* width: 60%; */
+		width: 80%;
 		
 		
 	}
