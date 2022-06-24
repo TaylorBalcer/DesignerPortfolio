@@ -21,7 +21,7 @@
       <header class="main-head"> 
         <div class="top-display">
           <a href="index.html">
-            <img src="img/logo.png" alt="Taylor Balcer Web Designer" class="logo">
+            <img src="img/logo.svg" alt="Taylor Balcer Web Designer" class="logo">
           </a>
     
         </div>
@@ -31,7 +31,7 @@
  
  
       <article class="content">
-        <img src="img/passion.jpg" alt="web designer">
+        <img src="img/passion.svg" alt="web designer">
 
         <h2>MY FEATURED WORK</h2>
         
@@ -66,12 +66,33 @@
               <li> I created my own videos for the project. Then functional audio and video elements and controls were coded onto the page to make users feel immersed in the locale. They can listen to and see British Columbia, from Vancouver all the way to the Sunshine Coast in Pender Harbour.</li>
             </ul>
           </article>
+      <style>
+/* [1] The container */
+.img-hover-zoom {
+  height: 300px; /* [1.1] Set it as per your need */
+  /* overflow: hidden; [1.2] Hide the overflowing of child elements */
+}
+
+/* [2] Transition property for smooth transformation of images */
+.img-hover-zoom img {
+  transition: transform .5s ease;
+}
+
+/* [3] Finally, transforming the image when container gets hovered */
+.img-hover-zoom:hover img {
+  transform: scale(1.5);
+}
+
+        </style>
       
-      
-      
+          <div class="img-hover-zoom">
           <a href="ExperienceBC/site/index.html" target="_blank" rel="noopener noreferrer">
             <img src="img/bc.png" alt="Experience British Columbia" class="my-pic">
+
           </a>
+        </div>
+
+
         </div>
       
         <div class="container-info">
@@ -95,9 +116,11 @@
               <li> The User Interface was carefully designed with CSS to fit major elements for every screen size and orientation.</li>
             </ul>
           </article>
+          <div class="img-hover-zoom">
           <a href="Goldenne/index.html" target="_blank" rel="noopener noreferrer">
             <img src="img/goldenne.png" alt="Goldenne Fruit" class="my-pic">
           </a>
+        </div>
         </div>
       
         <div class="container-info">
@@ -116,9 +139,11 @@
               <li> A custom theme was carefully developed to permit full control over layout and style customization, including the development of a designed header, sidebar, and navigation menu.</li>
               <li> Plugins were added to allow enhanced content and functionality, such as WooCommerce for an online shop, MetaSlider for an informational slideshow, and User Registration to let users create an account and post comments to interact with other users.</li></ul>
           </article>
+          <div class="img-hover-zoom">
           <a href="http://box5281.temp.domains/~aylorbal/blog/" target="_blank" rel="noopener noreferrer">
             <img src="img/wordpresspage.png" alt="WordPress" class="my-pic">
           </a>
+        </div>
         </div>
       
       

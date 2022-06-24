@@ -316,6 +316,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 		width:100%;
 		display:block;
 		grid-area: log;
+		padding-bottom:6rem;
 	}
 
 	img{
@@ -418,7 +419,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	}
 	
 	.my-pic4:hover{
-		transform: scale(2);
+		-webkit-filter: brightness(115%); 
 	}
 
 	.my-pic5{
@@ -430,7 +431,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	}
 	
 	.my-pic5:hover{
-		transform: scale(2);
+	-webkit-filter: brightness(115%); 
 	}
 
 	.my-pic6{

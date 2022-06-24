@@ -110,7 +110,7 @@ section {
 }
 
 body {
-    line-height: 1;
+    line-height: 1.2;
 }
 
 ol,
@@ -1761,6 +1761,17 @@ body {
       font-size:1.4rem;
     }
     
+}
+@media screen and (min-width: 1000px){
+  html { font-size: 150%}
+}
+
+@media screen and (min-width: 1400px){
+  html { font-size: 180%}
+}
+
+@media screen and (min-width: 1800px){
+  html { font-size: 200%}
 }
 
 @media screen and (min-width: 2000px) {
