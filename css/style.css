@@ -234,7 +234,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	}
 
 	a:not(.nav__link) {
-		color: #484466;
+		color: #b2aecd;
 	}
 	a:visited:not(.nav__link){
 		color: #817e98;
