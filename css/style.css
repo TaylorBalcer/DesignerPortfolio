@@ -253,7 +253,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 		grid-area: title;
 		font-family: 'Oxanium', cursive;
 		font-size:1rem;
-		padding:1rem;
+		/* padding:1rem; */
 
 	}
 	.masthead{
