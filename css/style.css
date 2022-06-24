@@ -271,19 +271,23 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	footer{
 		background-color: #e78f08;
 		/* margin: 0 2rem 0 2rem; */
-		
+		font-weight:bold;
 	} 
 	
 	.footer-container{
-		font-size:2rem;
+		/* s */
 		padding: 1rem;
+		font-weight:bold;
 	}
 	footer p{
-		
+		font-weight:bold;
 	}
 	.copyright{
-		color:white;
-		padding-left:2rem;
+		color:black;
+		padding-left:1rem;
+		font-size:1.3rem;
+		font-weight:bold;
+		 font-family: 'Michroma', sans-serif;
 	}
 
 	.main_content{
