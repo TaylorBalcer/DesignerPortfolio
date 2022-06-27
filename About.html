@@ -27,7 +27,7 @@
         </a>
 
       </div>
-      <h1 class="pagetitle">Taylor Balcer Web Designer Logo</h1>
+      <h1 class="pagetitle">Taylor Balcer Web Designer</h1>
 
     </header>
 
@@ -37,6 +37,7 @@
     <main>
 
       <article class="content">
+        <button  type="submit" onclick="submitNav()" class="menu_button">MENU </button>
         <!-- s -->
         <h2>ABOUT ME </h2>
 
@@ -68,7 +69,7 @@
 
 
 
-      <aside class="side">
+      <aside class="side" id="side">
         <nav class="main-nav">
           <ul class="aside-menu">
             <li><a class="nav-button" href="index.html">HOME</a></li>
@@ -87,7 +88,7 @@
         <p class="contact_text">(267)559-2014 </p>
 
         <p class="contact_text">Ambridge, PA 15003</p>
-        <p class="contact_text"><a class="small_" target="_blank" rel="noopener noreferrer"
+        <p class="contact_text"><a id="mail" class="small_" target="_blank" rel="noopener noreferrer"
             href="mailto:taylorjbalcer@gmail.com">taylorjbalcer@gmail.com</a></p>
       </aside>
     </main>
@@ -102,7 +103,17 @@
 
 
 
-
+  <script>
+  
+    //js code specfic to this page
+    
+    //event listeners
+  
+    //when water selection is clicked, execute funtion
+    function submitNav() {
+      location.href ="#side";
+    }
+    </script>
 
 
 

@@ -27,7 +27,7 @@
         </a>
 
       </div>
-      <h1 class="pagetitle">Taylor Balcer Web Designer Logo</h1>
+      <h1 class="pagetitle">Taylor Balcer Web Designer</h1>
 
     </header>
 
@@ -37,6 +37,7 @@
 
 
       <article class="content">
+        <button  type="submit" onclick="submitNav()" class="menu_button">MENU </button>
         <h2>CASE STUDY </h2>
         <!-- <section class="main_content"> -->
 
@@ -56,7 +57,7 @@
           included sketching and styled wireframes. I sketched some ideas for my personal idenity logo, then I had the
           difficult task of choosing one to bring to life with Adobe Illustrator. After getting some opinions from
           colleagues in industry I chose the perfect logo for me, then re-created and colorized my logo in Illustrator.
-          Once the logo was finished, I carefully and consistentley incorporated it into promotional materials, such as
+          Once the logo was finished, I carefully and consistently incorporated it into promotional materials, such as
           my resume, business card, etc. I then created some stylized wireframes which helped me
           start creating the structure of my portfolio website with HTML/CSS. I also repeated elements taken from my designed resume such as a gold strip and shades of purple.
 
@@ -92,7 +93,7 @@
 
 
 
-      <aside class="side">
+      <aside class="side" id="side">
         <nav class="main-nav">
           <ul class="aside-menu">
             <li><a class="nav-button" href="../index.html">HOME</a></li>
@@ -124,7 +125,17 @@
 
 
 
-
+  <script>
+  
+    //js code specfic to this page
+    
+    //event listeners
+  
+    //when water selection is clicked, execute funtion
+    function submitNav() {
+      location.href ="#side";
+    }
+    </script>
 
 
 

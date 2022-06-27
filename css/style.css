@@ -80,7 +80,11 @@ strong, b {
 em, i {
 font-style: italic;
 }
-
+.menu-button{
+	-webkit-appearance: none;
+-webkit-border-radius: none;
+border-radius: 0;
+}
 
   /* custom style  */
 	html{
@@ -114,7 +118,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 		color: black;
 		padding-bottom: 1rem;
 		animation: h2-an 10s linear forwards;
-		padding-top:4rem;
+		padding-top:2rem;
 		/* padding-left:1rem; */
 		
 	}
@@ -203,9 +207,21 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 		font-family: 'Audiowide', cursive;
 		padding-bottom:2rem;
 		padding-top:1rem;
-		color:#6232b1;
+		color:#c47807;
 		clear: both;
 	}
+#launch a{
+	color:goldenrod;
+}
+#launch a:hover{
+	color:#e9920fd1;
+}
+#launch a:visited{
+	color:#c47807;
+}
+#launch a:active{
+	color:rgb(138, 119, 6);
+}
 
 	.content__bold3{
 		font-size: 1.1rem;
@@ -245,7 +261,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 		
 	}
 	a:hover:not(.nav__link){
-		color: #552c96;
+		color: #6d5f84;
 	}
 	a:focus:not(.nav__link){
 		color: #999;
@@ -327,6 +343,7 @@ display:none;
 		/* padding-bottom:6rem; */
 		-webkit-filter: brightness(140%);
 	}
+	
 
 	img{
 		display: block;
@@ -381,7 +398,7 @@ display:none;
 	}
 	.img-hover-zoom img {
 		transition: transform .5s ease;
-		border: 4px solid rgba(27, 7, 66, 0.61);
+		border: 2px solid rgba(27, 7, 66, 0.61);
 		/* border-bottom: 4px solid rgba(27, 7, 66, 0.61); */
 		
 	  }
@@ -404,13 +421,14 @@ display:none;
 
 	.my-pic3{
 		grid-area: img;
+		
 	}
 	
 	.my-pic3{
 		transition: transform 1s ease .1s;
 		
 		
-		width: 50%;  float: right;  margin: 0 0 1rem 1rem
+		width: 100%;  float: right;  margin: 0 0 1rem 1rem
 	}
 	
 	
@@ -483,8 +501,10 @@ display:none;
 	text-align:center;
 }
 
+
 .small_{
 	font-size:1.4rem;
+	
 }
 .aside_email{
 	font-size:1rem;
@@ -535,113 +555,6 @@ display:none;
 	  span{
 		  display:none;
 	  }
-	  .social_media .social-media a .fa {
-		font-size: 40px;
-		color: #262626;
-		line-height:80px;
-		transition: .5s;
-		padding-right: 14px;
-	  }
-	  
-	  .social_media .social-media a span {
-		padding:0;
-		margin:0;
-		position:absolute;
-		top: 30px;
-		color: #262626;
-		letter-spacing: 4px;
-		transition: .5s;
-	  }
-	  
-	  .social_media .social-media a {
-		text-decoration: none;
-		display:absolute;
-		display:block;
-		width:185px;
-		height:68px;
-		background: #fff;
-		text-align:left;
-		/* padding-left: 10px; */
-		margin-top:3rem;
-		transform: rotate(-30deg) skew(25deg) translate(0,0);
-		transition:.5s;
-		box-shadow: -20px 20px 10px rgba(0,0,0,.5);
-	  }
-	  .social_media .social-media a:before {
-		content: '';
-		position: absolute;
-		top:10px;
-		left:-20px;
-		height:100%;
-		width:20px;
-		background: #ccc5ff;
-		transform: .5s;
-		transform: rotate(0deg) skewY(-45deg);
-	  }
-	  .social_media .social-media a:after {
-		content: '';
-		position: absolute;
-		bottom:-20px;
-		left:-10px;
-		height:20px;
-		width:100%;
-		background: #ccc5ff;
-		transform: .5s;
-		transform: rotate(0deg) skewX(-45deg);
-	  }
-	  
-	  .social_media .social-media a:hover {
-		transform: rotate(-30deg) skew(25deg) translate(20px,-15px);
-		box-shadow: -50px 50px 50px rgba(0,0,0,.5);
-	  }
-	  
-	  .social_media .social-media:hover .fa {
-		color:#fff;
-	  }
-	  
-	  .social_media .social-media:hover span {
-		color:#fff;
-	  }
-	  
-	  .social_media .social-media:hover:nth-child(1) a{
-		background: #6232b1;
-	  }
-	  .social_media .social-media:hover:nth-child(1) a:before{
-		background: #723acd;
-	  }
-	  .social_media .social-media:hover:nth-child(1) a:after{
-		background: #8a45f7;
-	  }
-	  
-	  .social_media .social-media:hover:nth-child(2) a{
-		background: #c47807;
-	  }
-	  .social_media .social-media:hover:nth-child(2) a:before{
-		background: #e78f08;
-	  }
-	  .social_media .social-media:hover:nth-child(2) a:after{
-		background: #fa9909;
-	  }
-	  
-	  .social_media .social-media:hover:nth-child(3) a{
-		background: #a79600;
-	  }
-	  .social_media .social-media:hover:nth-child(3) a:before{
-		background: #dbc501;
-	  }
-	  .social_media .social-media:hover:nth-child(3) a:after{
-		background: #fde200;
-	  }
-	  
-	  .social_media .social-media:hover:nth-child(4) a{
-		background: #7f7a9e;
-	  }
-	  .social_media .social-media:hover:nth-child(4) a:before{
-		background: #a9a4d4;
-	  }
-	  .social_media .social-media:hover:nth-child(4) a:after{
-		background: #ccc5ff;
-	  } 
 
 .container-info{
 			
@@ -706,10 +619,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 
 		
 		@media screen and (min-width: 780px){
+			.my-pic3{
+				grid-area: img;
+				width:50%;
+			}
+			
 			.menu_button{
 				display:none;
 			}
 			html{
+				font-size:70%;
 				background: #ffffff; /* Old browsers */
 background: -moz-linear-gradient(top,  #ffffff 4%, #ffffff 83%, #fde200 92%, #e78f08 100%); /* FF3.6-15 */
 background: -webkit-linear-gradient(top,  #ffffff 4%,#ffffff 83%,#fde200 92%,#e78f08 100%); /* Chrome10-25,Safari5.1-6 */
@@ -772,6 +691,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 		display:none;
 	}
 html{
+	font-size:95%;
 	background: #ffffff; /* Old browsers */
 background: -moz-linear-gradient(top,  #ffffff 4%, #ffffff 83%, #fde200 92%, #e78f08 100%); /* FF3.6-15 */
 background: -webkit-linear-gradient(top,  #ffffff 4%,#ffffff 83%,#fde200 92%,#e78f08 100%); /* Chrome10-25,Safari5.1-6 */
@@ -805,7 +725,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	grid-area: header;
 		/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#111010+74,ccc5ff+91,ffffff+100 */
 		background: black; /* Old browsers */
-	margin:1rem;
+	margin-bottom:1rem;
 			padding: 1rem 2rem 1rem 2rem;
   }
   .content {
@@ -936,11 +856,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	   flex-direction: column;
 	 }
 	 .side{
-		margin-left:1rem;
+		/* margin-left:1rem; */
 		margin-right:1rem;
 	 }
-	 .content{
-		margin-right:1rem;
-	 }
+	
 	
   }

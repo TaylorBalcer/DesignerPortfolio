@@ -152,6 +152,7 @@ body {
 
 header {
     grid-area: hdr;
+    position:relative;
 }
 
 footer {
@@ -201,7 +202,12 @@ h1 {
     font-family: 'Orbitron', sans-serif;
 
 }
-
+#no_style{
+background:none;
+color: #a96; font-size: .65rem;  font-family: Arial, Helvetica, sans-serif;
+border:none;
+box-shadow:none;
+}
 
 h2 {
     font-family: 'Comfortaa', cursive;
@@ -267,7 +273,9 @@ article h4{
     padding-left:.3rem;
     
 }
-
+aside h4{
+    color:rgb(182, 165, 17);
+}
 h4 {
     font-family: 'Comfortaa', cursive;
     font-size: 1.3rem;
@@ -430,31 +438,31 @@ main {
 
 .fa-brands:hover {
    
-    padding: 1rem;
+    /* padding: 1rem; */
     color: rgb(180, 142, 3);
 }
 
 .fa-solid:visited {
    
-    padding: 1rem;
+    /* padding: 1rem; */
     color: #4a86a1;
 }
 
 .fa-brands:visited {
     
-    padding: 1rem;
+    /* padding: 1rem; */
     color: #4a86a1;
 }
 
 .fa-solid:active {
    
-    padding: 1rem;
+    /* padding: 1rem; */
     color: #59728a;
 }
 
 .fa-brands:active {
     
-    padding: 1rem;
+    /* padding: 1rem; */
     color: #59728a;
 }
 
@@ -503,22 +511,22 @@ a {
 }
 
 a:link {
-    color: #2f2741;
+    color: #9079c4;
 }
 
 /* visited link */
 a:visited {
-    color: #125026
+    color: #358f50bd
 }
 
 /* mouse over link */
 a:hover {
-    color: #665586
+    color: #977dc7
 }
 
 /* selected link */
 a:active {
-    color: #2f4038;
+    color: #719b87;
 }
 
 /* animation styling */
@@ -591,7 +599,7 @@ label .hamburger {
     left: 60px;
     width: 30px;
     height: 2px;
-    background: #2a4a2f;
+    background: #5b9d65;
     display: block;
     -webkit-transform-origin: center;
     transform-origin: center;
@@ -608,7 +616,7 @@ label .hamburger:before {
     display: block;
     width: 100%;
     height: 100%;
-    background: #2a4a2f;
+    background: #5ea669;
 }
 
 label .hamburger:before {
@@ -675,10 +683,10 @@ label a {
 
 h1 {
     position: absolute;
-    top: 50%;
+    /* top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
     width: 80%;
     text-align: center;
 }
@@ -928,9 +936,9 @@ h1{
 }
 .head {
     position: absolute;
-    top: 30%;
+    /* top: 30%;
     left: 10%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
 
 }
 
