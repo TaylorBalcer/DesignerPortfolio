@@ -24,16 +24,16 @@
           <style>
             .spec {
                 font-size: 1rem;
-
+        
             }
         </style>
-        <a class="disclaimer" target="_blank" rel="noopener noreferrer" href="https://www.taylorbalcer-designs.com">
-            <img style="width:80%; float:right; margin-right:0" src="../img/logo.png" alt="taylor balcer logo" class="disclaimer" /> </a>
-        <div style="font-weight:lighter; width:30%; padding-top:.5rem;font-size:.5rem; ">
+        
+        <div style="padding: 0.25rem 0.25rem 0.25rem 15%;  font-size: .5rem;   text-align: right;  color: #030;">
             <!-- <p class="spec">Disclaimer</p> -->
-            <p class="none">This site was created by Taylor Balcer to show her skills in Design and Front-end Development and this site will not let you place an order</p>
+            <p class="none">This site was created by Taylor Balcer to show her skills in Design and Front-end Development. Goldenne is a fictitious company and you cannot actually order products</p>
         </div>
-
+        <a class="disclaimer" style="display: block; width: 120px; padding: 0.25rem;" target="_blank" rel="noopener noreferrer" href="https://www.taylorbalcer-designs.com">
+          <img style="width: 100%;  margin: 0;  padding: 0;" src="../img/logo.png" alt="taylor balcer logo" class="disclaimer" /> </a>
   </header>
   <nav id="main-navigation">
 
@@ -60,7 +60,7 @@
   <main>
 
 
-    <form class="checkout">
+    <form class="checkout" action="pickup.html">
       <div class="checkout-header">
         <h1 class="checkout-title">
           Checkout - Credit Card Information  <p style="padding:0; font-size:1.2rem;" id="cart-total">Total: $0</p>
@@ -77,14 +77,14 @@
         <input type="text" label="4111 1111 1111 1111" class="checkout-input checkout-card" placeholder="4111 1111 1111 1111">
       </p>
       <p>
-        <input type="text" label="MM"class="checkout-input checkout-exp" placeholder="MM">
-        <input type="text" label="YY"class="checkout-input checkout-exp" placeholder="YY">
-        <input type="text" label="CVC"class="checkout-input checkout-cvc" placeholder="CVC">
+        <input type="text" label="MM" required class="checkout-input checkout-exp" placeholder="MM">
+        <input type="text" label="YY" required class="checkout-input checkout-exp" placeholder="YY">
+        <input type="text" label="CVC" required class="checkout-input checkout-cvc" placeholder="CVC">
       </p>
 
       <p>
 
-        <input type="submit" onclick="submitForm()" value="Purchase" class="checkout-btn"> <a href="comfirm.html"></a>
+        <input type="submit" value="Purchase" class="checkout-btn"> <a href="comfirm.html"></a>
       </p>
     </form>
 
@@ -128,18 +128,15 @@
   </section>
 
   <footer>&copy; Taylor Balcer</footer>
-  <script src="js/script.js"></script>
+
 
 
   <script>
-    //js code specfic to this page
-    updateCart();//populate the cart right away
-    //event listeners
-    //when water selection is clicked, execute funtion
-    function submitForm() {
-      alert("Thank you for choosing Goldenne Fruit. Your order has been placed.");
-      window.open("pickup.html");
-    }
+  
+    // function submitForm() {
+    //   alert("Thank you for choosing Goldenne Fruit. Your order has been placed.");
+    //   location.href="pickhup.html"
+    // }
   </script>
 
 </body>

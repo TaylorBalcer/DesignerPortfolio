@@ -29,7 +29,7 @@
 		<!-- <img class="small" src="img/maple_leaf.png" alt="Canadian Maple Leaf"> -->
 		<div class="head">
 			<a href="index.html">
-				<h1>EXPERIENCE BRITISH COLUMBIA</h1>
+				<h1>EXPERIENCE BRITISH COLUMBIA BOOK TRIP</h1>
 			</a>
 		</div>
 
@@ -54,18 +54,19 @@
 		<article style="overflow: auto;">
 			<img class="right2" src="img/Downtown_Van.jpg" alt="Downtown Vancouver">
 
-			<form action="action_page.php" style="border:1px solid #ccc">
+			<form style="border:1px solid #ccc">
 				<div class="container">
-					<h4>Create an Account and an agent will reach out within 48hrs</h4>
+					<h4>Create an Account</h4> 
+					<p style="padding-left:.5rem; text-transform:capitalize;">Once you sign up an agent will reach out within 48hrs</p>
 
 					<hr>
 
 					<label for="email"><b>Email</b></label><br>
-					<input style="background-color:rgba(53, 4, 98, 0.151)" type="text" name="email" required>
+					<input style="background-color:rgba(53, 4, 98, 0.151)" type="text" id="email" name="email" required>
 					<br>
 					<label for="psw"><b>Password</b></label>
 					<br>
-					<input style="background-color:rgba(53, 4, 98, 0.151)" type="password" name="psw" required>
+					<input style="background-color:rgba(53, 4, 98, 0.151)" id="psw" type="password" name="psw" required>
 					<br>
 
 					<!-- </select> -->
@@ -176,8 +177,8 @@
 
 
 						<p>I had to visit Vancouver for a business convention. Since I planned to stay for a week, I
-							wanted to find new and exciting restaurants, museums, and hiking spots that arent too far
-							outside of the city. The agents planned a trip that exceded my expectations and will surely
+							wanted to find new and exciting restaurants, museums, and hiking spots that aren't too far
+							outside of the city. The agents planned a trip that exceeded my expectations and will surely
 							be booking another trip in the winter to go skiing. </p>
 					</div>
 				</div>
@@ -231,9 +232,13 @@
 	</script>
 
 	<script>
-		function submitForm() {
+		function submitForm() { 
+			if(document.querySelector("#email").value == ""){
+				alert("Please enter your email & password")
+			}else{
 			alert("Thank you for choosing Experience British Columbia. An agent will reach out within 48hrs. If you receive no response within the expected time, please email us at experienceBC@bookatrip.com");
 			document.forms[0].reset();
+			}
 		}
 	</script>
 </body>
