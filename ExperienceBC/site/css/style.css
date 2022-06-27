@@ -1284,7 +1284,7 @@ button:hover {
   
   @-webkit-keyframes weatherTextAnimation {
       32% { content: 'Clear';}
-      33% { content: 'Chill7'; }
+      33% { content: 'Chill'; }
       62% { content: 'Cold'; }
       63% { content: 'Hot'; }
       99% { content: 'Humid'; }
