@@ -791,6 +791,9 @@ margin:auto 0;
   .disclaimer{
     display:none;
   }
+  .disclaimer2{
+    display:block;
+  }
   .none{
     display:none;
   }
@@ -863,6 +866,18 @@ margin:auto 0;
   .checkout {
     width: 270px;
     margin: 10px auto;
+    padding: 15px;
+    background: #f3f6fa;
+    border: 1px solid;
+    border-color: #c2cadb #bbc5d6 #b7c0cd;
+    border-radius: 7px;
+    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+    background: #f3f6ea;
+  }
+  .checkout2 {
+    width: 270px;
+    margin: 10px 0 10px auto;
     padding: 15px;
     background: #f3f6fa;
     border: 1px solid;
@@ -1076,7 +1091,9 @@ margin:auto 0;
   }
 
   @media screen and (max-width: 899px) {
-  
+  .disclaimer, .disclaimer2{
+    display:none;
+  }
 .flip-card-back{
 display:none;
 }
