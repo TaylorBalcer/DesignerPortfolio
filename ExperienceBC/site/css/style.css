@@ -174,7 +174,7 @@ iframe{
 	width:80%
 }
 img {
-	padding:1rem;
+	/* padding:1rem; */
 	border-radius: 10px;
 	max-width: 80%;
 	height: auto;
@@ -231,7 +231,7 @@ h3 {
 
 img {
     border-radius: 10px;
-    padding: 1rem 1rem .5rem 0rem;
+    /* padding: 1rem 1rem .5rem 0rem; */
     width: 40%;
     float: left;
     height: auto;
@@ -241,6 +241,8 @@ img {
 
 .right2{
     float:right;
+    margin-left:1rem;
+    margin-bottom:1rem;
 }
 
 .skytrain {
@@ -559,24 +561,29 @@ a:active {
 	width:60%;
 	/* padding:1rem; */
     float:right;
+    margin-bottom:.5rem;
+    margin-left:.5rem;
 }
 .left{
 	float:left;
 	width:30%;
 	/* padding:1rem; */
+    margin-right:.5rem;
     margin-bottom:.5rem;
 }
 .left2{
 	float:left;
 	width:50%;
 	/* padding:1rem; */
+    margin-right:.5rem;
     margin-bottom:.5rem;
 }
 .right{
 	float:left;
 	width:51.5%;
 	/* padding:1rem; */
-    margin-bottom:.5rem;
+    margin-right:.5rem;
+    margin-bottom:.3rem;
 }
 
 *,
@@ -851,11 +858,12 @@ hr {
     background-color: #2c582a53;
     color: black;
     font-size:.9rem;
-    padding: 3px 17px;
-    margin: 8px 0;
+    padding: 3px 0;
+    margin: 8px 2px 8px 0;
+
     border: none;
     cursor: pointer;
-    width: 100%;
+    width: calc(100% - 2px);
     opacity: 0.9;
 }
 
@@ -867,7 +875,7 @@ button:hover {
 .cancelbtn {
     color: black;
     font-size:.9rem;
-    padding: 3px 17px;
+    padding: 3px 0;
     margin: 8px 0;
     border: none;
     cursor: pointer;
@@ -881,7 +889,7 @@ button:hover {
 .cancelbtn,
 .signupbtn {
     float: left;
-    width: 50%;
+    width: calc(50% - 2px);
 }
 
 /* Add padding to container elements */
@@ -964,7 +972,7 @@ max-width:100%;
     }
 
     img {
-		padding:1rem;
+		/* padding:1rem; */
         border-radius: 10px;
         max-width: 80%;
         height: auto;
