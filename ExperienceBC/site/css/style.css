@@ -163,6 +163,10 @@ main {
     grid-area: mn;
 }
 
+.home a h1{
+    text-align:left;
+}
+
 
 iframe{
 	
@@ -233,6 +237,10 @@ img {
     height: auto;
     transition: transform 1s ease .1s;
 
+}
+
+.right2{
+    float:right;
 }
 
 .skytrain {
@@ -549,7 +557,8 @@ a:active {
 } */
 .big{
 	width:60%;
-	padding:1rem;
+	/* padding:1rem; */
+    float:right;
 }
 .left{
 	float:left;
@@ -569,12 +578,7 @@ a:active {
 	/* padding:1rem; */
     margin-bottom:.5rem;
 }
-.right2{
-	float:right;
-	width:50%;
-	/* padding:1rem; */
-    margin-bottom:.5rem;
-}
+
 *,
 *:before,
 *:after {
@@ -693,8 +697,8 @@ h1 {
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%); */
-    width: 80%;
-    text-align: center;
+    /* width: 80%; */
+    /* text-align: center; */
 }
 
 
@@ -894,19 +898,48 @@ button:hover {
 
 /* Change styles for cancel button and signup button on extra small screens */
 @media screen and (max-width: 300px) {
-
+  
     .cancelbtn,
     .signupbtn {
         width: 100%;
     }
 }
+@media screen and (max-width:600px){
+    .right2{
+        display:none;
+         
+         
+     }
+     #email{
+        max-width:100%;
+        float:right;
+     }
 
+     #psw{
+        max-width:100%;
+        float:right;
+     }
+}
 /* STYLING FOR LARGER SCREENS */
 @media screen and (min-width:768px) {
     html {
         font-size: 120%;
     }
+    .right2{
+        float:right;
+        width:50%;
+        /* padding:1rem; */
+        margin-bottom:.5rem;
+    }
 
+    /* #email{
+max-width:100%;
+    }
+
+    #psw{
+        max-width:100%;
+        float:right;
+    } */
     body {
         /*
 		grid-template-rows:  auto auto auto;
@@ -940,7 +973,7 @@ button:hover {
     }
 
 h1{
-	font-size:1.8
+	font-size:1.8rem;
 }
 .head {
     position: absolute;
