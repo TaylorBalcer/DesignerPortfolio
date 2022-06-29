@@ -195,7 +195,7 @@ img {
 
 }
 .disclaimer{
-    padding:1rem;
+    margin-right:1rem;
 }
 h1 {
     font-size: 2rem;
@@ -850,7 +850,7 @@ input[type=password]:focus {
 
 hr {
     border: 1px solid #f1f1f1;
-    margin-bottom: 25px;
+    margin-bottom: 79px;
 }
 
 /* Set a style for all buttons */
@@ -920,12 +920,12 @@ button:hover {
      }
      #email{
         max-width:100%;
-        float:right;
+      
      }
 
      #psw{
         max-width:100%;
-        float:right;
+     
      }
 }
 /* STYLING FOR LARGER SCREENS */
