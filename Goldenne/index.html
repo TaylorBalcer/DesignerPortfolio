@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+    content="This site was created by Taylor Balcer to show her skills in Design and Front-end Development. Goldenne is a fictitious company and you cannot actually order products">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Goldenne Fruit - Smoothie Builder - Home </title>
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Roboto+Flex:opsz,wght@8..144,300&family=Saira+Condensed:wght@300&family=Varela+Round&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <script src="https://kit.fontawesome.com/69a9e0c5d6.js" crossorigin="anonymous"></script>
+  <script>
+    if(!localStorage.getItem("userName"))
+    {localStorage.setItem('userName', 'User');}
+    function cal() {
+      if(document.getElementById('tbName').value)
+      {var name = document.getElementById('tbName').value;
+      localStorage.setItem('userName', name);}
+      console.log(name);
+      location.href ="flavor.html";
+    }
+  </script>
+</head>
+
+<body>
+  
+  <header class="masthead">
+   
+      <h1 class="masthead__logo" style="float:left;"> <a href="index.html" class="nav-button">  <img src="img/goldenne_logo.svg"
+        alt="Goldenne Fruit" id="logo" /></a></h1>
+  
+  
+  <style>
+    .spec {
+        font-size: 1rem;
+
+    }
+</style>
+
+<div style="padding: 0.25rem 0.25rem 0.25rem 15%;  font-size: .5rem;   text-align: right;  color: #030;">
+    <!-- <p class="spec">Disclaimer</p> -->
+    <p class="none">This site was created by Taylor Balcer to show her skills in Design and Front-end Development. Goldenne is a fictitious company and you cannot actually order products</p>
+</div>
+<a class="disclaimer" style="display: block; width: 120px; padding: 0.25rem;" target="_blank" rel="noopener noreferrer" href="https://www.taylorbalcer-designs.com">
+  <img style="width: 100%;  margin: 0;  padding: 0;" src="../img/logo.png" alt="taylor balcer logo" class="disclaimer" /> </a>
+  <!-- <style> 
+    
+    .disclaimer {  
+      width: 150px; 
+      float: right; 
+      margin: auto 0;
+    } 
+  </style> 
+   <a target="_blank" rel="noopener noreferrer" href="https://www.taylorbalcer-designs.com">
+  <img src="../img/logo.png" alt="taylor balcer logo" class="disclaimer"/> </a>
+  <div style="font-weight:lighter; margin: auto 0; padding:1rem; font-size:.9rem;"> 
+    <p>This site was created by Taylor Balcer to show her skills in Design and Front-end Development and this site will not let you place an order</p>
+  </div>  -->
+
+  
+    
+        
+          
+
+  </header>
+
+
+  <nav id="main-navigation">
+    <ul class="main-menu">
+      <span>Goldenne Fruit</span>
+
+      <li><a href="flavor.html" class="nav-button">Flavor</a></li>
+      <li><a href="liquid.html" class="nav-button">Liquid</a></li>
+
+      <li><a href="extra-fruit.html" class="nav-button">Extra</a></li>
+      <li><a href="powder.html" class="nav-button">Powder</a></li>
+      <li><a href="cart.html" class="nav-button"><i class="fa-solid fa-cart-shopping"></i></a></li>
+
+
+    </ul>
+
+  </nav>
+
+  <span> Goldenne Fruit</span>
+  <img class="hero" src="img/header.jpg" alt="drinking" id="drinking" />
+  
+
+
+  <h2>Ready for Amazing Smoothies?</h2>
+  <main>
+
+    <div class="cartinfo" id="new-bg">
+      <!-- <img src="img/goldennelogo.svg"
+      alt="Goldenne Fruit" class="small_img" /> -->
+      <p class="name">All we need is your first name to get started!</p>
+      
+      <!-- <section class=Arrowright>
+
+        <a href="flavor.html" class="masthead__nav-link2">
+
+
+        </a>
+      </section> -->
+     
+        <!-- <div class="content2"> -->
+          <div class="content" >
+          <form action="flavor.html" onsubmit=" event.preventDefault(); cal()">
+            <input id="tbName" type="text" class="checkout-input checkout-name"  placeholder="Your name" autofocus>
+    <br>
+            <button type="submit"  class="order_button glow-button">It's Smoothie Time! </button>
+          </form>
+        </div>
+    
+   
+      </div>
+
+
+
+        <p  class="home"> You're about to customize a Goldenne Fruit Smoothie to your liking. Pick from up to 81 different combinations of our freshest fruit, liquids, and powders to make the perfect
+          drink!
+         </p>
+
+
+
+
+  
+
+  </main>
+  
+  <footer>
+    
+  &copy; Taylor Balcer
+   </footer>
+  <script src="js/script.js"></script>
+  <script>
+  
+    //js code specfic to this page
+    
+    //event listeners
+  
+    //when water selection is clicked, execute funtion
+    // function submitName() {
+    //   location.href ="flavor.html";
+    // }
+    
+
+// // Warning before leaving the page (back button, or outgoinglink)
+// window.onbeforeunload = function () {
+//    return "Do you really want to leave our brilliant application?";
+//    //if we return nothing here (just calling return;) then there will be no pop-up question at all
+//    //return;
+// };
+
+    
+  </script>
+</body>
+
+</html>

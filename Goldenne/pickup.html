@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Goldenne Fruit - Smoothie Builder - Your Goldenne Fruit</title>
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Roboto+Flex:opsz,wght@8..144,300&family=Saira+Condensed:wght@300&family=Varela+Round&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <script src="https://kit.fontawesome.com/69a9e0c5d6.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <header class="masthead">
+
+    <h1 class="masthead__logo"><a href="index.html" class="nav-button">  <span> Goldenne Fruit</span><img src="img/goldenne_logo.svg"
+          alt="Goldenne Fruit" id="logo" /></a>
+    </h1>
+  
+  </header>
+  <nav id="main-navigation">
+
+    <ul class="main-menu">
+      <!-- <li><a href="index.html"   class="nav-button" >Home</a></li> -->
+      <li><a href="flavor.html" class="nav-button">Flavor</a></li>
+      <li><a href="liquid.html" class="nav-button">Liquid</a></li>
+
+      <li><a href="extra-fruit.html" class="nav-button">Extra</a></li>
+      <li><a href="powder.html" class="nav-button">Powder</a></li>
+      <li><a href="cart.html" class="nav-button"><i class="fa-solid fa-cart-shopping"></i></a></li>
+    </ul>
+  </nav>
+
+  <h2 id="welcome"> </h2>
+  <script>
+    window.onload = function () {
+      document.getElementById('welcome').innerText ="Pick up "+ localStorage.getItem('userName') + "'s Goldenne Fruit Smoothie";
+    };
+  </script>
+  <!-- <h2>
+    <div id="cart-total">Total: $0</div>
+  </h2> -->
+  <main>
+    
+      <div style="width: 100%"><iframe width="100%" height="254" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=254&amp;hl=en&amp;q=40.46779651791276,%20-80.00718355178834+(Goldenne%20Fruit%20Smoothies)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/wearable-gps/">wearable gps</a></iframe></div>
+
+    <!-- <form  class="checkout">
+      <div class="checkout-header"> -->
+        
+          <!-- <div id="comp-empty-layer">
+            <span class="checkout-price">$10</span>
+
+        </h1>
+      </div> -->
+      
+<p style="text-align:center; line-height:2rem; padding:1.5rem; font-size:1rem; font-weight:bold; text-transform:uppercase;"> Please pick up your Goldenne fruit smoothie at <br> 1519 Smoothie Ave.<br> Pittsburgh, PA 15099</p>
+     
+<!-- <p>
+
+        <input type="text" class="checkout-input checkout-name" placeholder="Name on Card" autofocus>
+      <p>
+        <input type="text" class="checkout-input checkout-card" placeholder="4111 1111 1111 1111">
+      </p>
+      <p>
+        <input type="text" class="checkout-input checkout-exp" placeholder="MM">
+        <input type="text" class="checkout-input checkout-exp" placeholder="YY">
+        <input type="text" class="checkout-input checkout-cvc" placeholder="CVC">
+      </p>
+
+      <p>
+
+        <input type="submit" onclick="submitForm()" value="Purchase" class="checkout-btn"> <a href="comfirm.html"></a>
+      </p> -->
+   
+<!-- 
+    <script src="js/script.js"></script> -->
+
+
+
+  </main>
+<!-- 
+  <div id="comp-frame2">
+    <div id="comp-empty-layer"><img src="img/Empty-Jar.png" alt="Empty Jar" id="EmptyJar" /></div>
+    <div id="comp-flavor-layer"></div>
+    <div id="comp-liquid-layer"></div>
+    <div id="comp-extra-layer"></div>
+    <div id="comp-powder-layer"></div>
+
+  </div>
+
+  <section class="cart-box3">
+
+    <p id="cart-flavor-name">No flavor chosen yet</p>
+    <p id="cart-flavor-price">$</p>
+    <p id="cart-liquid-name">No Liquid chosen yet</p>
+    <p id="cart-liquid-price">$</p>
+    <p id="cart-extra-name">No extra fruit chosen yet</p>
+    <p id="cart-extra-price">$</p>
+    <p id="cart-powder-name">No powder chosen yet</p>
+    <p id="cart-powder-price">$</p>
+  </section> -->
+
+  <footer>&copy; Taylor Balcer</footer>
+  <!-- <script src="js/script.js"></script>
+
+
+  <script>
+    //js code specfic to this page
+    // updateCart();//populate the cart right away
+    //event listeners
+    //when water selection is clicked, execute funtion
+    // function submitForm() {
+    //   alert("Thank you for choosing Goldenne Fruit. Your order has been placed. Pressing the OK button will take you to the Goldenne Fruit homepage.");
+    //   window.open("pickup.html");
+    // }
+  </script> -->
+
+
+
+</body>
+
+</html>
